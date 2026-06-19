@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlink IT Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <nav class="custom-navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Netlink IT Group Logo"
+                    class="header-brand-logo-img">
+            </a>
+
+            <div class="desktop-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Solutions</a>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="serviceDrop" role="button"
+                        data-bs-toggle="dropdown" data-bs-popper="static" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="serviceDrop">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code me-2"></i> Custom Web
+                                Development</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-brands fa-shopify me-2"></i> Shopify
+                                eCommerce</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-brands fa-wordpress me-2"></i> WordPress
+                                Setup</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gears me-2"></i> CRM & CMS
+                                Solutions</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bullhorn me-2"></i> Social Media
+                                Marketing (SMM)</a></li>
+                    </ul>
+                </div>
+                <a href="#">Work</a>
+                <a href="#">Hire Developers</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#" class="btn-nav-contact">Contact Us</a>
+            </div>
+
+            <button class="custom-toggler" id="menuToggleBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars toggler-icon" id="togglerIcon"></i>
+            </button>
+
+        </div>
+    </nav>
+
+    <div class="mobile-sidebar" id="mobileSidebar">
+
+        <button class="close-btn" id="closeSidebarBtn" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="sidebar-brand">
+            <img src="https://netlinkitgroup.com/images/logo-white.png" alt="Netlink IT Group Logo"
+                class="header-brand-logo-img">
+
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" id="mobileServiceToggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="mobileServiceToggle">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code me-2"></i> Custom Web
+                            Development</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-brands fa-shopify me-2"></i> Shopify
+                            eCommerce</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-brands fa-wordpress me-2"></i> WordPress
+                            Setup</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gears me-2"></i> CRM & CMS Solutions</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bullhorn me-2"></i> Social Media
+                            Marketing (SMM)</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Hire Developers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <button class="sidebar-contact-btn">Contact Us</button>
+    </div>
+
+    <section class="hero-wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="hero-title">
+                        Unlocking Business Potential with <br>
+                        <span class="typewriter-cursor" id="dynamicText"></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Netlink provides premium and high-performance engineering solutions for your business. From
+                        custom website development to advanced digital architecture, we synchronize technology to fuel
+                        your corporate journey.
+                    </p>
+                    <div class="action-gaps">
+                        <a href="#" class="btn btn-primary-custom">Explore Our Services</a>
+                        <a href="#" class="btn btn-secondary-custom">Request Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ticker-mask">
+                        <div class="ticker-col scroll-move-up">
+                            <div class="ticker-card"><i class="fa-solid fa-code"></i>
+                                <h5>Web Development</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-brands fa-shopify"></i>
+                                <h5>Shopify Stores</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-brands fa-wordpress"></i>
+                                <h5>WordPress Sites</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-chart-line"></i>
+                                <h5>SMM Services</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-code"></i>
+                                <h5>Web Development</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-brands fa-shopify"></i>
+                                <h5>Shopify Stores</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-brands fa-wordpress"></i>
+                                <h5>WordPress Sites</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-chart-line"></i>
+                                <h5>SMM Services</h5>
+                            </div>
+                        </div>
+                        <div class="ticker-col scroll-move-down">
+                            <div class="ticker-card"><i class="fa-solid fa-database"></i>
+                                <h5>Custom CRM</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-laptop-code"></i>
+                                <h5>Laravel Apps</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-layer-group"></i>
+                                <h5>CMS Solutions</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-rocket"></i>
+                                <h5>IT Solutions</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-database"></i>
+                                <h5>Custom CRM</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-laptop-code"></i>
+                                <h5>Laravel Apps</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-layer-group"></i>
+                                <h5>CMS Solutions</h5>
+                            </div>
+                            <div class="ticker-card"><i class="fa-solid fa-rocket"></i>
+                                <h5>IT Solutions</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-4">
+                    <div class="asymmetric-cards-container">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-lg-6 track-col-left">
+                                <div class="feature-floating-card">
+                                    <div class="icon-circle shadow-green"><i class="fa-solid fa-gear"></i></div>
+                                    <h4>Extensive Industry Experience</h4>
+                                    <p>With over a decade of expertise, we deliver cutting-edge IT solutions tailored to
+                                        diverse business needs.</p>
+                                </div>
+                                <div class="feature-floating-card">
+                                    <div class="icon-circle shadow-purple"><i class="fa-solid fa-users"></i></div>
+                                    <h4>Customer-First Approach</h4>
+                                    <p>We focus on understanding your unique business challenges and delivering
+                                        customized, results-driven solutions.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 track-col-right">
+                                <div class="feature-floating-card">
+                                    <div class="icon-circle shadow-orange"><i class="fa-solid fa-lightbulb"></i></div>
+                                    <h4>All-in-One IT & Enterprise Solutions</h4>
+                                    <p>From web and app development to ERP systems and game development, we provide
+                                        end-to-end digital solutions.</p>
+                                </div>
+                                <div class="feature-floating-card">
+                                    <div class="icon-circle shadow-blue"><i class="fa-solid fa-microchip"></i></div>
+                                    <h4>Innovative & Future-Ready Technology</h4>
+                                    <p>We utilize the latest advancements to ensure your business stays competitive in a
+                                        rapidly evolving digital landscape.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="section-header-meta">
+                        <span class="sub-badge">Why Netlink</span>
+                        <h2 class="main-heading">We Sync Technology With Corporate Strategy</h2>
+                        <p class="heading-desc">
+                            Standard agencies template out deliverables. Netlink architectures high-performance bespoke
+                            digital assets. We replace vanilla setups with custom-engineered ecosystems engineered to
+                            scale.
+                        </p>
+                    </div>
+                    <div class="feature-track-list">
+                        <div class="track-item">
+                            <div class="track-indicator"><span class="indicator-dot"></span></div>
+                            <div class="track-content">
+                                <h5>Custom Tailored Engineering</h5>
+                                <p>No generic builders. Whether it's robust custom Laravel frameworks or high-end
+                                    bespoke headless structures, we control every single asset line for lightning
+                                    speeds.</p>
+                            </div>
+                        </div>
+                        <div class="track-item">
+                            <div class="track-indicator"><span class="indicator-dot"></span></div>
+                            <div class="track-content">
+                                <h5>Omnichannel SMM & CMS Integration</h5>
+                                <p>Synchronize your enterprise. From intelligent CRM architectures to focused social
+                                    engineering loops, we keep your customer pipelines clean and active.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="success-stories-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="stories-sub-badge">Success Stories</span>
+                    <h2 class="stories-main-heading">Proven Work on Freelancer and Upwork with 94% Job Success</h2>
+
+                    <div class="stories-metrics-grid">
+                        <div class="metric-glass-card-item">
+                            <div class="circular-progress-canvas" data-value="96">
+                                <span class="percent-counter">96%</span>
+                            </div>
+                            <h5>Completed</h5>
+                        </div>
+                        <div class="metric-glass-card-item">
+                            <div class="circular-progress-canvas" data-value="93">
+                                <span class="percent-counter">93%</span>
+                            </div>
+                            <h5>On Budget</h5>
+                        </div>
+                        <div class="metric-glass-card-item">
+                            <div class="circular-progress-canvas" data-value="97">
+                                <span class="percent-counter">97%</span>
+                            </div>
+                            <h5>On Time</h5>
+                        </div>
+                    </div>
+
+                    <div class="stories-actions-cluster mt-4">
+                        <a href="#" class="btn-platform-action fl-theme">Hire Us On Freelancer</a>
+                        <a href="#" class="btn-platform-action uw-theme">Hire Us On Upwork</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="stories-workspace-hero-frame">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXdPkfRUe45JG_PZb3glc2js-Q7ojIMqiHCfmAkSLYHf9zk-d0TlRplg&s=10"
+                            alt="Corporate Team Celebration Workspace Graphic Node" class="workspace-main-img">
+                        <div class="workspace-floating-feedback-widget">
+                            <h3>98%</h3>
+                            <p>Of Our Customers Recommends us to Their Business Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="agile-process-section">
+        <div class="snake-organic-glow-layer"></div>
+
+        <div class="container relative-z">
+            <div class="text-center mb-4">
+                <span class="process-sub-badge">Our Approach</span>
+                <h2 class="process-main-heading">Our Development Methodology</h2>
+                <p class="process-heading-desc">
+                    Hum ek dynamic snake-curve box matrix framework follow karte hain taaki continuous engineering
+                    deployment execute ho sake.
+                </p>
+            </div>
+
+            <div class="snake-timeline-wrapper">
+                <svg class="snake-svg-connector" viewBox="0 0 1000 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 80 80 L 920 80 C 1000 80, 1000 280, 920 280 L 80 280" stroke="#d5e2d5" stroke-width="6"
+                        stroke-linecap="round" />
+                    <path class="active-progress-path" d="M 80 80 L 920 80 C 1000 80, 1000 280, 920 280 L 80 280"
+                        stroke="#2e7d32" stroke-width="6" stroke-linecap="round" />
+                </svg>
+
+                <div class="snake-steps-container">
+                    <div class="snake-node-item active" data-step="1" style="left: 12%; top: 80px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="step-num-badge">01</span>
+                        </div>
+                        <span class="node-box-title">Analysis & Planning</span>
+                    </div>
+
+                    <div class="snake-node-item" data-step="2" style="left: 50%; top: 80px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                            <span class="step-num-badge">02</span>
+                        </div>
+                        <span class="node-box-title">Design & Prototyping</span>
+                    </div>
+
+                    <div class="snake-node-item" data-step="3" style="left: 88%; top: 80px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span class="step-num-badge">03</span>
+                        </div>
+                        <span class="node-box-title">Software Development</span>
+                    </div>
+
+                    <div class="snake-node-item" data-step="4" style="left: 88%; top: 280px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-vial-circle-check"></i>
+                            <span class="step-num-badge">04</span>
+                        </div>
+                        <span class="node-box-title">Strict Testing & QA</span>
+                    </div>
+
+                    <div class="snake-node-item" data-step="5" style="left: 50%; top: 280px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-server"></i>
+                            <span class="step-num-badge">05</span>
+                        </div>
+                        <span class="node-box-title">Live Deployment</span>
+                    </div>
+
+                    <div class="snake-node-item" data-step="6" style="left: 12%; top: 280px;">
+                        <div class="node-box-trigger">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span class="step-num-badge">06</span>
+                        </div>
+                        <span class="node-box-title">Maintenance System</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-screen-display-card">
+                <div class="active-panel-view" id="panel-step-1">
+                    <span class="badge-phase-tag">Phase 01</span>
+                    <h3>Requirements Analysis & Resources Planning</h3>
+                    <p>Hum project execution start hone se pehle poore structural mapping model ki deep scope checking
+                        karte hain. Resources allocations, roadmap charts, aur logical dependencies ko isi step par
+                        align kiya jata hai taaki clear velocity target mile.</p>
+                </div>
+                <div class="active-panel-view d-none" id="panel-step-2">
+                    <span class="badge-phase-tag">Phase 02</span>
+                    <h3>Design and Prototyping Wireframes</h3>
+                    <p>Bespoke custom UI/UX structure workflow setup. Hum core layout templates bypass karke complex
+                        element mapping karte hain. Interactive prototypes direct high-fidelity components ke sath test
+                        hote hain user journey evaluate karne ke liye.</p>
+                </div>
+                <div class="active-panel-view d-none" id="panel-step-3">
+                    <span class="badge-phase-tag">Phase 03</span>
+                    <h3>Core Custom Software Engineering</h3>
+                    <p>Core algorithmic setup aur database schema deployment runtime config. High-level clean structures
+                        layout use hote hain jo fast compile time scalability patterns aur semantic framework
+                        optimization process maintain karte hain.</p>
+                </div>
+                <div class="active-panel-view d-none" id="panel-step-4">
+                    <span class="badge-phase-tag">Phase 04</span>
+                    <h3>Strict Testing & Regression Check</h3>
+                    <p>Automated regression scripts aur direct core module verification testing. System checks aur
+                        latency runs execute karke performance blockages trace kiye jaate hain, jo high load servers par
+                        complete failure protection fix karte hain.</p>
+                </div>
+                <div class="active-panel-view d-none" id="panel-step-5">
+                    <span class="badge-phase-tag">Phase 05</span>
+                    <h3>Production Launch Execution</h3>
+                    <p>Optimized package bundles dynamic web server environment ya secure orchestration pipelines par
+                        push kiye jaate hain. Zero-downtime execution aur live operational telemetry logs initialize ho
+                        jaate hain output track karne ke liye.</p>
+                </div>
+                <div class="active-panel-view d-none" id="panel-step-6">
+                    <span class="badge-phase-tag">Phase 06</span>
+                    <h3>Long-Term Maintenance Configuration</h3>
+                    <p>System live hone ke baad structural improvements aur dynamic environment modifications cycle
+                        configure hoti hai. Database optimization runs aur regular package updates verify kiye jaate
+                        hain top velocity scaling ke liye.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-success-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="tech-ticker-title">Tech Behind Our Success</h3>
+            </div>
+        </div>
+
+        <div class="tech-infinite-ticker-wrapper">
+            <div class="tech-ticker-scroll-track animate-left">
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                        alt="Laravel"><span>Laravel</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="NodeJS"><span>NodeJS</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React"><span>React Native</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                        alt="Vue"><span>Vue.js</span></div>
+
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                        alt="Laravel"><span>Laravel</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="NodeJS"><span>NodeJS</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="React"><span>React Native</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+                        alt="Vue"><span>Vue.js</span></div>
+            </div>
+        </div>
+
+        <div class="tech-infinite-ticker-wrapper mt-4">
+            <div class="tech-ticker-scroll-track animate-right">
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                        alt="PHP"><span>PHP System</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"><span>JavaScript</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+                        alt="WP"><span>WordPress</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        alt="MySQL"><span>MySQL Database</span></div>
+
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                        alt="PHP"><span>PHP System</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JS"><span>JavaScript</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+                        alt="WP"><span>WordPress</span></div>
+                <div class="tech-logo-node-item"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        alt="MySQL"><span>MySQL Database</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-works-section">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-5">
+                <div class="works-header-left">
+                    <span class="works-sub-badge">Our Works</span>
+                    <h2 class="works-main-heading">Explore Recent Works</h2>
+                </div>
+                <a href="#" class="btn-works-view-all">View All</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="project-showcase-card">
+                        <div class="project-display-canvas portfolio-bg-purple">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
+                                alt="Artham Finserve Interface Layout" class="primary-browser-mockup">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=300&auto=format&fit=crop"
+                                alt="Artham Mobile Application UI" class="secondary-phone-mockup">
+                        </div>
+                        <h4 class="project-card-title">Navyug Commerce College </h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="project-showcase-card">
+                        <div class="project-display-canvas portfolio-bg-slate">
+                            <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=600&auto=format&fit=crop"
+                                alt="Tyrehubuk Business Platform" class="primary-browser-mockup">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=300&auto=format&fit=crop"
+                                alt="Tyrehubuk Mobile View Layout" class="secondary-phone-mockup">
+                        </div>
+                        <h4 class="project-card-title">Haardik Nayak Financial Products Distribution Pvt Ltd</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="project-showcase-card">
+                        <div class="project-display-canvas portfolio-bg-blue">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=600&auto=format&fit=crop"
+                                alt="College ERP Screen" class="primary-browser-mockup">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=300&auto=format&fit=crop"
+                                alt="College Mobile Portal" class="secondary-phone-mockup">
+                        </div>
+                        <h4 class="project-card-title">Roop Shree Saree</h4>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="premium-testimonials-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                    <span class="review-sub-badge">Testimonials</span>
+                    <h2 class="review-main-heading">What Our Partners Say About Our Engineering</h2>
+
+                    <div class="avatar-interactive-cluster-grid">
+                        <div class="avatar-circle-node active" data-testimonial="1"><img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop"
+                                alt="Client User Profile 1"></div>
+                        <div class="avatar-circle-node" data-testimonial="2"><img
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop"
+                                alt="Client User Profile 2"></div>
+                        <div class="avatar-circle-node" data-testimonial="3"><img
+                                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=150&auto=format&fit=crop"
+                                alt="Client User Profile 3"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="testimonial-display-terminal-box">
+                        <div class="quote-giant-icon-mark"><i class="fa-solid fa-quote-right"></i></div>
+
+                        <div class="testimonial-active-panel-view" id="review-panel-1">
+                            <p class="review-comment-body">"Netsol IT Solutions ki technological prowess and
+                                problem-solving strategy se hum kaafi impressed hain. Hamare custom framework platforms
+                                lightning fast speed par control asset lines deliver karte hain."</p>
+                            <div class="reviewer-identity-meta-patch mt-4">
+                                <h5>Rizvan Shaikh</h5>
+                                <span>Co-Founder, Xpert Cellular Services</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-active-panel-view d-none" id="review-panel-2">
+                            <p class="review-comment-body">"Humne inke sath apna high-traffic e-commerce storefront
+                                execute kiya tha. Image layers aur script rendering behaviors algorithms complete
+                                optimized hain jo conversion conversion ratio push karte hain."</p>
+                            <div class="reviewer-identity-meta-patch mt-4">
+                                <h5>Rajeesh Nair</h5>
+                                <span>Enterprise Product Manager</span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-active-panel-view d-none" id="review-panel-3">
+                            <p class="review-comment-body">"Inki execution transparency and milestone scheduling modules
+                                best in segment hain. Structured sprints configuration workflow parameters deliver hote
+                                hain jo long-term security ensure karte hain."</p>
+                            <div class="reviewer-identity-meta-patch mt-4">
+                                <h5>Satish Nair</h5>
+                                <span>Operations & Architecture Director</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="global-industries-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="ind-sub-badge">Global Markets</span>
+                <h2 class="ind-main-heading">Extensive Experience Across Diverse Industries Worldwide</h2>
+                <p class="ind-heading-desc">
+                    Humne global verticals me scalable engineering deliver ki hai. Hamari technology ecosystems diverse
+                    business workflows ko control karti hain.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-building-user"></i></div>
+                        <h4>Real Estate</h4>
+                        <p>Property managers platforms, ERP syncing, and asset tracking workflows.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-ticket-simple"></i></div>
+                        <h4>Events & Tickets</h4>
+                        <p>High-traffic dynamic slot bookings, secure QR validations, and gateway modules.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-bolt-lightning"></i></div>
+                        <h4>On-Demand Services</h4>
+                        <p>Instant dispatch micro-services structures built on micro-second latency logic.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-plane-departure"></i></div>
+                        <h4>Tour & Travel</h4>
+                        <p>Multi-API global aggregates architectures and robust real-time routing paths.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-share-nodes"></i></div>
+                        <h4>Social Networking</h4>
+                        <p>Real-time custom web-sockets chat systems and horizontal indexing algorithms.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Education (LMS)</h4>
+                        <p>Bespoke student profiles databases, online video streams management pipelines.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-cloud-sun"></i></div>
+                        <h4>IoT Tech</h4>
+                        <p>Sensor hardware telemetries, rapid remote access commands logs pipelines.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="industry-glass-card">
+                        <div class="ind-icon-wrapper"><i class="fa-solid fa-gears"></i></div>
+                        <h4>ERP & CRM Platforms</h4>
+                        <p>Bespoke business resource automation frameworks and ledger accounting data lines.</p>
+                        <div class="card-hover-reveal-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-news-blog-section">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-5">
+                <div>
+                    <span class="blog-sub-badge">Insights & Updates</span>
+                    <h2 class="blog-main-heading">Popular News & Blog</h2>
+                </div>
+                <a href="#" class="btn-blog-explore">Explore More Articles</a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="blog-insight-card">
+                        <div class="blog-thumbnail-frame">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600&auto=format&fit=crop"
+                                alt="E-commerce Framework Scale Analytics Insights Image Asset" class="blog-img-node">
+                            <div class="blog-date-chip">June 19, 2026</div>
+                        </div>
+                        <div class="blog-info-content-patch">
+                            <span class="blog-cat-tag">E-Commerce Development</span>
+                            <h4>Transformation of eCommerce Industry in the Last 10 Years</h4>
+                            <p>Bespoke custom interfaces configurations are replacing vanilla templates environments to
+                                accelerate customer retention.</p>
+                            <a href="#" class="btn-blog-read-more">Read Full Post <i
+                                    class="fa-solid fa-arrow-right-longms"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="blog-insight-card">
+                        <div class="blog-thumbnail-frame">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=600&auto=format&fit=crop"
+                                alt="Laravel Framework Engineering Performance Mockups Graphic Asset"
+                                class="blog-img-node">
+                            <div class="blog-date-chip">May 14, 2026</div>
+                        </div>
+                        <div class="blog-info-content-patch">
+                            <span class="blog-cat-tag">Custom Engineering</span>
+                            <h4>Why High-Performance Architectures Beat Template Builders</h4>
+                            <p>We analyze the deep framework execution sync systems that give custom websites lightning
+                                fast speed levels.</p>
+                            <a href="#" class="btn-blog-read-more">Read Full Post <i
+                                    class="fa-solid fa-arrow-right-longms"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="blog-insight-card">
+                        <div class="blog-thumbnail-frame">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop"
+                                alt="Cloud Infrastructure Scaling Analytics Graphic Asset" class="blog-img-node">
+                            <div class="blog-date-chip">April 02, 2026</div>
+                        </div>
+                        <div class="blog-info-content-patch">
+                            <span class="blog-cat-tag">Cloud & Platforms</span>
+                            <h4>Optimizing Server Clusters for Zero Downtime Implementations</h4>
+                            <p>Strategic ledger data structures configuration roadmap metrics for scaling enterprise
+                                setups securely.</p>
+                            <a href="#" class="btn-blog-read-more">Read Full Post <i
+                                    class="fa-solid fa-arrow-right-longms"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="premium-corporate-footer">
+
+        <div class="container container-cta-position">
+            <div class="footer-orange-cta-card">
+                <div class="cta-info-patch">
+                    <h3>Let's Discuss Your Project</h3>
+                    <p>We have the capability to transform your aspirations into tangible business realities, propelling
+                        you toward unprecedented success.</p>
+                </div>
+                <div class="cta-actions-cluster">
+                    <a href="#" class="btn-cta-link link-request">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main-content-links">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer-brand-column">
+                            <div class="footer-logo-layout mb-3">
+                                <img src="https://netlinkitgroup.com/images/logo-white.png" alt="Netlink IT Group Logo"
+                                    class="footer-logo-brand-img">
+                            </div>
+                            <p class="brand-summary-desc">
+                                Netlink IT Solutions Pvt. Ltd. is a Surat-based tech company delivering innovative IT
+                                and custom software engineering solutions since 2009.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                        <div class="footer-links-menu-block">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">Who We Are</a></li>
+                                <li><a href="#">Our Memories</a></li>
+                                <li><a href="#">Works Portfolio</a></li>
+                                <li><a href="#">Blogs & Insights</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="footer-links-menu-block">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#">Website Design & Development</a></li>
+                                <li><a href="#">Application Design & Development</a></li>
+                                <li><a href="#">Custom Software Development</a></li>
+                                <li><a href="#">MLM Software Architecture</a></li>
+                                <li><a href="#">SEO & Digital Marketing Service</a></li>
+                                <li><a href="#">CRM & CMS Solutions Hub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-contact-details-block">
+                            <h4>Have Any Questions?</h4>
+                            <ul class="contact-info-list-items">
+                                <li>
+                                    <div class="c-icon-frame"><i class="fa-solid fa-location-dot"></i></div>
+                                    <span class="c-text-label">CHIMNABAI ROAD Upper Ground, Sule complex, opposite S V
+                                        Library, Madhumati Colony, Navsari, Gujarat 396445</span>
+                                </li>
+                                <li>
+                                    <div class="c-icon-frame"><i class="fa-solid fa-phone"></i></div>
+                                    <span class="c-text-label"><a href="tel:+912612265535">+91 7878 915 001</a></span>
+                                </li>
+                                <li>
+                                    <div class="c-icon-frame"><i class="fa-solid fa-envelope"></i></div>
+                                    <span class="c-text-label"><a
+                                            href="mailto:info@netlinkitgroup.com">info@netlinkitgroup.com</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-certification-badges-bar">
+            <div class="container">
+                <div class="badges-flex-container-row">
+                    <div class="trust-badge-mock-node"><i class="fa-solid fa-shield-halved me-1"></i> ISO 9001:2015
+                    </div>
+                    <div class="trust-badge-mock-node"><i class="fa-solid fa-award me-1"></i> Top Web Developer</div>
+                    <div class="trust-badge-mock-node"><i class="fa-solid fa-certificate me-1"></i> NASSCOM Member</div>
+                    <div class="trust-badge-mock-node"><i class="fa-solid fa-circle-check me-1"></i> Make In India</div>
+                    <div class="trust-badge-mock-node"><i class="fa-solid fa-lock me-1"></i> Secured SSL</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright-legal-strip">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+                    <p class="copyright-text-lbl">Copyright © 2026 Netlink IT Solutions Pvt. Ltd. All Rights Reserved.
+                    </p>
+                    <div class="footer-social-networks-cluster">
+                        <a href="#" aria-label="Twitter X link Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn Account Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook Page Profile"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram Handle Profile"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/912612265535" class="floating-whatsapp-widget-anchor" target="_blank" rel="noopener"
+        aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-ping-pulse-glow"></span>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
