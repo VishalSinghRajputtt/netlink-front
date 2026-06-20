@@ -24,15 +24,24 @@ body {
     padding: 0;
 }
 /* ============================================================
-   NAVBAR - UPDATED
+   NAVBAR - STICKY
    ============================================================ */
 .custom-navbar {
     background: var(--bg-white) !important;
     padding: 12px 0;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1050;
     border-bottom: 3px solid rgba(76, 175, 80, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Navbar shadow on scroll */
+.custom-navbar.scrolled {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
@@ -46,7 +55,7 @@ body {
 }
 
 .header-brand-logo-img {
-    height: 36px;
+    height: 48px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -106,9 +115,7 @@ body {
     display: none;
     cursor: pointer;
     margin-left: auto;
-    /* Push to right */
     order: 2;
-    /* Ensure it's on right */
 }
 
 .custom-toggler:hover {
@@ -125,10 +132,9 @@ body {
 }
 
 /* ============================================================
-   MOBILE NAVBAR - Logo Centered, Toggler Right
+   MOBILE NAVBAR
    ============================================================ */
 @media (max-width: 991.98px) {
-    /* Navbar Container */
     .custom-navbar .container {
         display: flex;
         align-items: center;
@@ -136,7 +142,6 @@ body {
         position: relative;
     }
 
-    /* Navbar Brand - Centered */
     .navbar-brand {
         position: absolute;
         left: 50%;
@@ -145,21 +150,18 @@ body {
         gap: 10px;
     }
 
-    /* Logo - Bigger on Mobile */
     .header-brand-logo-img {
-        height: 40px;
+        height: 45px;
     }
 
     .header-brand-txt {
         font-size: 20px;
     }
 
-    /* Hide desktop nav */
     .desktop-nav {
         display: none !important;
     }
 
-    /* Toggler - Right Side */
     .custom-toggler {
         display: block !important;
         margin-left: auto;
@@ -168,7 +170,6 @@ body {
         z-index: 1060;
     }
 
-    /* Left side empty space for balance */
     .navbar-collapse {
         display: none;
     }
@@ -179,7 +180,7 @@ body {
    ============================================================ */
 @media (max-width: 575.98px) {
     .header-brand-logo-img {
-        height: 35px;
+        height: 40px;
     }
 
     .header-brand-txt {
@@ -192,7 +193,7 @@ body {
 }
 
 /* ============================================================
-   DESKTOP - Hide Toggler, Show Nav
+   DESKTOP
    ============================================================ */
 @media (min-width: 992px) {
     .mobile-sidebar {
@@ -3761,7 +3762,7 @@ body {
 }
 
 .footer-logo-brand-img {
-    height: 42px;
+    height: 52px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -3779,7 +3780,7 @@ body {
     }
 
     .footer-logo-brand-img {
-        height: 38px;
+        height: 45px;
     }
 }
 
