@@ -390,3 +390,64 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// ============================================================
+// STATS COUNTER ANIMATION
+// ============================================================
+document.addEventListener('DOMContentLoaded', function() {
+    const statNumbers = document.querySelectorAll('.stat-number-center');
+    let animationStarted = false;
+    let observer;
+
+    function animateNumbers() {
+        statNumbers.forEach((stat, index) => {
+            const target = parseInt(stat.getAttribute('data-count'));
+            const suffix = stat.getAttribute('data-suffix') || '';
+            const duration = 2000; // 2 seconds
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+
+            // Add pulse animation class
+            stat.classList.add('counting');
+            setTimeout(() => {
+                stat.classList.remove('counting');
+            }, 300);
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                // Format number with commas for large numbers
+                const displayNum = Math.floor(current).toLocaleString();
+                stat.innerHTML = displayNum + `<span class="suffix">${suffix}</span>`;
+            }, duration / steps);
+        });
+    }
+
+    // Use Intersection Observer to trigger animation when visible
+    const statsRow = document.getElementById('statsCounter');
+    
+    if (statsRow) {
+        if ('IntersectionObserver' in window) {
+            observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !animationStarted) {
+                        animationStarted = true;
+                        // Small delay to ensure smooth animation
+                        setTimeout(animateNumbers, 300);
+                    }
+                });
+            }, {
+                threshold: 0.3 // Trigger when 30% of the element is visible
+            });
+            
+            observer.observe(statsRow);
+        } else {
+            // Fallback for older browsers
+            animateNumbers();
+        }
+    }
+});

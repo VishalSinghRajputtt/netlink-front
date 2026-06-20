@@ -4810,7 +4810,9 @@ body {
     color: #1a1a1a;
 }
 
-/* ---------- Stats Row ---------- */
+/* ============================================================
+   STORY STATS - WITH ANIMATION
+   ============================================================ */
 .story-stats-row {
     display: flex;
     align-items: center;
@@ -4834,12 +4836,68 @@ body {
     font-weight: 800;
     color: #1a1a1a;
     line-height: 1.1;
+    display: inline-block;
 }
 
-.stat-number-center::after {
-    content: '+';
+.stat-number-center .suffix {
     color: #4caf50;
     font-size: 18px;
+}
+
+.stat-label-center {
+    font-size: 12px;
+    color: #4a5a4a;
+    font-weight: 500;
+}
+
+.stat-divider-center {
+    width: 1px;
+    height: 35px;
+    background: rgba(76, 175, 80, 0.10);
+}
+
+/* Counter Animation Class */
+.stat-number-center.counting {
+    animation: countPulse 0.3s ease;
+}
+
+@keyframes countPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        color: #4caf50;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 575.98px) {
+    .story-stats-row {
+        gap: 8px;
+        padding: 12px 0;
+    }
+
+    .stat-number-center {
+        font-size: 18px;
+    }
+
+    .stat-number-center .suffix {
+        font-size: 14px;
+    }
+
+    .stat-label-center {
+        font-size: 9px;
+    }
+
+    .stat-divider-center {
+        height: 20px;
+    }
 }
 
 .stat-label-center {
