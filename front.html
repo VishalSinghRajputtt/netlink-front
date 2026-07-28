@@ -67,7 +67,7 @@
             width: 100%;
         }
 
-        .logo {
+       .logo {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -78,12 +78,19 @@
             flex-shrink: 0;
         }
 
-        .logo i {
-            color: var(--primary-green);
-            font-size: 24px;
+        .logo-img {
+            height: 38px; 
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
-        /* Desktop Nav Links */
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 32px;
+            }
+        }
+
         .nav-links {
             display: flex;
             list-style: none;
@@ -928,7 +935,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <i class="fa-solid fa-cubes"></i> NETLINK
+            <img src="logo.png" alt="NETLINK Logo" class="logo-img">
         </div>
 
         <!-- Desktop Menu Links -->
@@ -956,9 +963,9 @@
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <div class="logo" style="font-size: 18px;">
-                <i class="fa-solid fa-cubes"></i> NETLINK
-            </div>
+          <div class="logo">
+            <img src="logo.png" alt="NETLINK Logo" class="logo-img">
+         </div>
             <div class="close-btn" id="closeSidebar">
                 <i class="fa-solid fa-xmark"></i>
             </div>
