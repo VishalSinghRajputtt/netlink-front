@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Growth & Technology Advisory | Netlink IT Consultancy</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS & Animate.css Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Header Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-header sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="front.html">
+        <img src="logo.png" alt="Netlink IT Consultancy Logo" class="header-logo">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="siteNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="front.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-green fw-bold" href="#" data-bs-toggle="dropdown">Solutions</a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="front.html">Hardware & Infrastructure</a></li>
+              <li><a class="dropdown-item" href="software.html">Software & Digital Solutions</a></li>
+              <li><a class="dropdown-item active text-green" href="advisory.html">Digital Growth & Technology Advisory</a></li>
+              <li><a class="dropdown-item" href="crm.html">CRM Solutions</a></li>
+              <li><a class="dropdown-item" href="erp.html">ERP Solutions</a></li>
+              <li><a class="dropdown-item" href="website-development.html">Website Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Innovations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="why-netlink.html">Why Netlink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="front.html#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="tel:+919823323456" class="top-phone-link">
+            <i class="bi bi-telephone"></i> +91 98233 23456
+          </a>
+          <a href="front.html#contact" class="btn-primary-green">
+            Discuss Advisory <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Breadcrumb & Hero Section -->
+  <section class="hero-wrapper pb-5">
+    <div class="container">
+      <div class="site-breadcrumb">
+        <a href="index.html">Home</a> &gt; <a href="#">Solutions</a> &gt; <span class="text-dark fw-bold">Digital Growth & Technology Advisory</span>
+      </div>
+
+      <div class="row align-items-center mt-3">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <span class="section-badge">DIGITAL GROWTH & TECHNOLOGY ADVISORY</span>
+          <h1 class="hero-title" style="font-size: 2.8rem;">
+            Technology Alone Doesn't<br>Grow Businesses. <span class="text-green">The Right<br>Strategy Does.</span>
+          </h1>
+          <p class="hero-text">
+            Netlink helps businesses improve digital visibility, choose the right technology, streamline decisions and create practical roadmaps for sustainable growth.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn-primary-green">
+              Discuss Your Growth Goals <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#" class="btn-outline-dark">
+              <i class="bi bi-compass"></i> Explore Advisory Services
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="advisory-hero-image-wrapper">
+            <img src="images/indian-leadership.jpg" alt="Netlink Advisory Team with Laptop">
+            
+            <div class="hero-floating-badge" style="top:-15px; left:10%;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3067/3067260.png" class="floating-badge-img" alt="Strategy"> Strategy
+            </div>
+            <div class="hero-floating-badge" style="top:-15px; right:20%;">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="floating-badge-img" alt="Growth"> Growth
+            </div>
+            <div class="hero-floating-badge" style="bottom:20px; left:-15px;">
+              <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" class="floating-badge-img" alt="Automation"> Automation
+            </div>
+            <div class="hero-floating-badge" style="bottom:-15px; right:15%;">
+              <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="floating-badge-img" alt="Technology"> Technology
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Where Do You Need Better Direction? -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <h2 style="font-size: 2.1rem; font-weight: 800;">Where Do You Need Better Direction?</h2>
+      </div>
+
+      <div class="problem-6-grid">
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2092/2092063.png" class="card-icon-img" alt="Manual Processes"></div>
+          <h5 class="card-box-title">Manual Processes</h5>
+          <p class="card-box-desc">Too many repetitive tasks and disconnected workflows.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" class="card-icon-img" alt="Weak Digital Presence"></div>
+          <h5 class="card-box-title">Weak Digital Presence</h5>
+          <p class="card-box-desc">Your business is hard to find or not generating enquiries.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" class="card-icon-img" alt="Technology Decisions"></div>
+          <h5 class="card-box-title">Unclear Technology Decisions</h5>
+          <p class="card-box-desc">Not sure what software or systems to invest in.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885430.png" class="card-icon-img" alt="Disconnected Systems"></div>
+          <h5 class="card-box-title">Disconnected Systems</h5>
+          <p class="card-box-desc">Different tools don't communicate with each other.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" class="card-icon-img" alt="Low Lead Visibility"></div>
+          <h5 class="card-box-title">Low Lead Visibility</h5>
+          <p class="card-box-desc">Leads come in, but follow-up and conversion are inconsistent.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" class="card-icon-img" alt="Growth Stalled"></div>
+          <h5 class="card-box-title">Growth Has Stalled</h5>
+          <p class="card-box-desc">You need a clearer roadmap for growth and efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. How Netlink Helps You Move Forward -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <h2 style="font-size: 2.1rem; font-weight: 800;">How Netlink Helps You Move Forward</h2>
+      </div>
+
+      <div class="row g-5">
+        <!-- Technology Advisory Column -->
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/4248/4248401.png" class="section-title-icon-img" alt="Technology Advisory">
+            <h4 class="mb-0 text-green" style="font-weight: 800;">Technology Advisory</h4>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1541/1541402.png" class="card-icon-img" alt="Technology Audit"></div>
+                <h5 class="card-box-title">Technology Audit</h5>
+                <p class="card-box-desc">Understand your current systems and gaps.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="card-icon-img" alt="Digital Roadmap"></div>
+                <h5 class="card-box-title">Digital Roadmap</h5>
+                <p class="card-box-desc">A practical plan aligned with your business goals.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" class="card-icon-img" alt="Software Selection"></div>
+                <h5 class="card-box-title">Software Selection</h5>
+                <p class="card-box-desc">Choose the right tools for the right outcome.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" class="card-icon-img" alt="Process Automation"></div>
+                <h5 class="card-box-title">Process Automation Planning</h5>
+                <p class="card-box-desc">Identify automation opportunities and ROI.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885430.png" class="card-icon-img" alt="Integration Strategy"></div>
+                <h5 class="card-box-title">Integration Strategy</h5>
+                <p class="card-box-desc">Connect systems for better data and flow.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2103/2103601.png" class="card-icon-img" alt="AI Readiness"></div>
+                <h5 class="card-box-title">AI Readiness / Future Planning</h5>
+                <p class="card-box-desc">Prepare your business for tomorrow's technology.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Growth Services Column -->
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="section-title-icon-img" alt="Digital Growth">
+            <h4 class="mb-0 text-green" style="font-weight: 800;">Digital Growth Services</h4>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" class="card-icon-img" alt="Website Strategy"></div>
+                <h5 class="card-box-title">Website Strategy</h5>
+                <p class="card-box-desc">Plan a website that builds trust and converts.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055645.png" class="card-icon-img" alt="SEO Visibility"></div>
+                <h5 class="card-box-title">SEO & Search Visibility</h5>
+                <p class="card-box-desc">Improve rankings and get found by the right people.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" class="card-icon-img" alt="Google Business"></div>
+                <h5 class="card-box-title">Google Business Profile</h5>
+                <p class="card-box-desc">Optimize your listing and attract local customers.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1802/1802979.png" class="card-icon-img" alt="Social Media"></div>
+                <h5 class="card-box-title">Social Media Presence</h5>
+                <p class="card-box-desc">Build brand presence and engage your audience.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" class="card-icon-img" alt="Lead Generation"></div>
+                <h5 class="card-box-title">Lead Generation Strategy</h5>
+                <p class="card-box-desc">Attract, capture and nurture quality leads.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-box text-start">
+                <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" class="card-icon-img" alt="Online Reputation"></div>
+                <h5 class="card-box-title">Online Reputation & Branding</h5>
+                <p class="card-box-desc">Build trust with reviews, content and brand signal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. A Practical Journey from Visibility to Growth -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <h2 style="font-size: 2.1rem; font-weight: 800;">A Practical Journey from Visibility to Growth</h2>
+        <p class="text-muted">We help businesses move forward one practical step at a time.</p>
+      </div>
+
+      <div class="step-journey-container">
+        <!-- Step 1 -->
+        <div class="process-step-item">
+          <div class="process-step-line"></div>
+          <div class="process-step-number">1</div>
+          <h5 class="process-step-title">Offline / Limited Visibility</h5>
+          <p class="process-step-desc">Hard to find and limited reach.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step-item">
+          <div class="process-step-line"></div>
+          <div class="process-step-number">2</div>
+          <h5 class="process-step-title">Professional Website</h5>
+          <p class="process-step-desc">A strong digital foundation.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step-item">
+          <div class="process-step-line"></div>
+          <div class="process-step-number">3</div>
+          <h5 class="process-step-title">Search & Google Presence</h5>
+          <p class="process-step-desc">Get discovered by the right audience.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step-item">
+          <div class="process-step-line"></div>
+          <div class="process-step-number">4</div>
+          <h5 class="process-step-title">Lead Generation</h5>
+          <p class="process-step-desc">Attract and convert quality enquiries.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step-item">
+          <div class="process-step-line"></div>
+          <div class="process-step-number">5</div>
+          <h5 class="process-step-title">CRM & Automation</h5>
+          <p class="process-step-desc">Streamline follow-up and operations.</p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step-item">
+          <div class="process-step-number">6</div>
+          <h5 class="process-step-title">Data-Driven Growth</h5>
+          <p class="process-step-desc">Make better decisions and grow sustainably.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. One Partner. Better Decisions. Better Results. -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <h2 style="font-size: 2.1rem; font-weight: 800;">One Partner. Better Decisions. Better Results.</h2>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- Left Visual -->
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div style="background:#ffffff; border-radius:20px; padding:24px; box-shadow:var(--netlink-card-shadow); border:1px solid #f1f5f9;">
+            <div style="background:#f8fafc; border-radius:14px; padding:24px; text-align:center">
+              <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" class="dash-visual-icon mb-2" alt="Dashboard Visual">
+              <h5 class="mt-3 font-weight-bold">Growth Strategy Dashboard</h5>
+              <p class="text-muted" style="font-size: 0.88rem;">Unified metrics, automated lead flow & real-time reporting.</p>
+              <div class="progress my-3" style="height: 8px;">
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+              </div>
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill">90% Growth Roadmap Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 4 Value Cards -->
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="card-box text-start d-flex align-items-flex-start gap-3">
+                <div class="icon-circle flex-shrink-0 mb-0"><img src="https://cdn-icons-png.flaticon.com/512/3067/3067260.png" class="card-icon-img" alt="Integrated Thinking"></div>
+                <div>
+                  <h5 class="card-box-title">Integrated Thinking</h5>
+                  <p class="card-box-desc">Strategy, software and digital growth connected together.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-box text-start d-flex align-items-flex-start gap-3">
+                <div class="icon-circle flex-shrink-0 mb-0"><img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" class="card-icon-img" alt="Business-First"></div>
+                <div>
+                  <h5 class="card-box-title">Business-First Approach</h5>
+                  <p class="card-box-desc">Recommendations based on goals, not trends.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-box text-start d-flex align-items-flex-start gap-3">
+                <div class="icon-circle flex-shrink-0 mb-0"><img src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png" class="card-icon-img" alt="Practical Execution"></div>
+                <div>
+                  <h5 class="card-box-title">Practical Execution</h5>
+                  <p class="card-box-desc">From planning to implementation and support.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-box text-start d-flex align-items-flex-start gap-3">
+                <div class="icon-circle flex-shrink-0 mb-0"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-icon-img" alt="Long-Term Guidance"></div>
+                <div>
+                  <h5 class="card-box-title">Long-Term Guidance</h5>
+                  <p class="card-box-desc">Ongoing advisory, reviews and continuous improvement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Beyond Strategy, We Stay Involved -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <h2 style="font-size: 2.1rem; font-weight: 800;">Beyond Strategy, We Stay Involved</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-2-4 col-md-4 col-6 flex-grow-1">
+          <div class="card-box">
+            <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" class="card-icon-img" alt="Review Meetings"></div>
+            <h5 class="card-box-title">Review Meetings</h5>
+            <p class="card-box-desc">Regular check-ins to review progress and priorities.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2-4 col-md-4 col-6 flex-grow-1">
+          <div class="card-box">
+            <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-icon-img" alt="Performance Monitoring"></div>
+            <h5 class="card-box-title">Performance Monitoring</h5>
+            <p class="card-box-desc">Track metrics, results and growth indicators.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2-4 col-md-4 col-6 flex-grow-1">
+          <div class="card-box">
+            <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" class="card-icon-img" alt="Improvement Recommendations"></div>
+            <h5 class="card-box-title">Improvement Recommendations</h5>
+            <p class="card-box-desc">Actionable suggestions to grow faster.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2-4 col-md-4 col-6 flex-grow-1">
+          <div class="card-box">
+            <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/4248/4248401.png" class="card-icon-img" alt="Team Training"></div>
+            <h5 class="card-box-title">Team Training & Guidance</h5>
+            <p class="card-box-desc">Upskill your team and improve adoption.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2-4 col-md-4 col-6 flex-grow-1">
+          <div class="card-box">
+            <div class="icon-circle mb-3"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="card-icon-img" alt="Ongoing Support"></div>
+            <h5 class="card-box-title">Ongoing Support</h5>
+            <p class="card-box-desc">We're here when you need us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Frequently Asked Questions & CTA Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <!-- FAQ Left -->
+        <div class="col-lg-6">
+          <h2 style="font-size: 1.9rem; font-weight: 800;" class="mb-4">Frequently Asked Questions</h2>
+          
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <!-- Q1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  What is technology advisory?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  Technology advisory helps businesses evaluate their current tech stack, identify operational gaps, and create a tailored digital roadmap to achieve business goals efficiently.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                  Can you help even if we already have software?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  Yes! We specialize in optimizing existing software, streamlining integrations between tools, and ensuring your team maximizes adoption.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                  Do you also guide digital marketing and visibility?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  Absolutely. We provide end-to-end digital growth strategies including SEO, website optimization, lead generation funnels, and brand visibility.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                  Can you improve our Google and online presence?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  Yes, we help optimize your Google Business Profile, improve local search rankings, and manage online brand reputation.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                  Will you recommend the right software for our business?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  We analyze your specific workflows and budget to recommend the most cost-effective and scalable software solutions.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false">
+                  Do you provide ongoing support after implementation?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted" style="font-size:0.9rem">
+                  Yes, we stay involved through review meetings, performance monitoring, team training, and continuous advisory support.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Right -->
+        <div class="col-lg-6">
+          <div class="cta-banner-container">
+            <div class="p-4 p-md-5">
+              <h2 style="font-size: 1.9rem; font-weight: 800;" class="mb-3">
+                Let's Build a Smarter Growth Strategy for Your Business.
+              </h2>
+              <p class="text-muted mb-4" style="font-size: 0.95rem;">
+                Share your goals and challenges. Our team will help you identify the right mix of strategy, software and digital growth support.
+              </p>
+              <div class="mb-4">
+                <a href="#" class="btn-primary-green me-3 mb-2">
+                  Schedule a Consultation <i class="bi bi-arrow-right"></i>
+                </a>
+                <span class="d-inline-block text-muted" style="font-size:0.9rem">
+                  Or Call Us: <a href="tel:+919823323456" class="top-phone-link ms-1">+91 98233 23456</a>
+                </span>
+              </div>
+              <div class="rounded-3 overflow-hidden shadow-sm mt-3">
+                <img src="images/indian-tech-team.jpg" alt="Netlink Strategy Team" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Explore Related Solutions Section -->
+  <section class="py-5 bg-section-light border-top">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h4 style="font-weight: 800; color: var(--netlink-dark);">Explore Related Solutions</h4>
+      </div>
+
+      <div class="solution-pill-wrapper">
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-window text-green"></i> Website Development <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-gear-wide-connected text-green"></i> ERP Solutions <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-bullseye text-green"></i> CRM Solutions <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-laptop text-green"></i> Custom Business Software <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-plug-fill text-green"></i> API & Integrations <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Footer Section -->
+  <footer class="footer-dark-bg">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="front.html" class="d-inline-block mb-3">
+            <img src="logo.png" alt="Netlink IT Consultancy Logo" class="footer-logo" style="max-height: 42px;">
+          </a>
+          <p class="mb-4 text-secondary" style="max-width: 320px; font-size: 0.85rem; line-height: 1.6;">
+            A link to all your IT needs. From reliable infrastructure to powerful software, CRM, ERP and strategic technology advisory, we help businesses work smarter and grow faster.
+          </p>
+          <div class="d-flex align-items-center">
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Solutions -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-col-title">Solutions</h5>
+          <ul class="footer-menu-links">
+            <li><a href="front.html">Hardware & Infrastructure</a></li>
+            <li><a href="software.html">Software & Digital Solutions</a></li>
+            <li><a href="advisory.html">Digital Growth & Technology Advisory</a></li>
+            <li><a href="crm.html">CRM Solutions</a></li>
+            <li><a href="erp.html">ERP Solutions</a></li>
+            <li><a href="website-development.html">Website Development</a></li>
+            <li><a href="index.html">Netlink Innovations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-col-title">Quick Links</h5>
+          <ul class="footer-menu-links">
+            <li><a href="front.html">Home</a></li>
+            <li><a href="why-netlink.html">Why Netlink</a></li>
+            <li><a href="index.html">Innovations</a></li>
+            <li><a href="front.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-col-title">Contact Us</h5>
+          <div class="text-secondary" style="font-size:0.83rem; line-height:1.6">
+            <p class="mb-2">
+              <i class="bi bi-geo-alt me-1 text-light"></i> Chinnabai Road, Upper Ground, Sule Complex, Opp. S V Library, Madhumati Colony, Navsari, Gujarat 396445
+            </p>
+            <p class="mb-2">
+              <i class="bi bi-telephone me-1 text-light"></i> +91 98233 23456
+            </p>
+            <p class="mb-0">
+              <i class="bi bi-envelope me-1 text-light"></i> info@netlinkitgroup.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Line -->
+      <div class="footer-bottom-line d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>
+          © 2026 Netlink IT Consultancy Private Limited. All Rights Reserved.
+        </div>
+        <div>
+          <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".navbar .dropdown")) {
+          document.querySelectorAll(".navbar .dropdown-menu").forEach(m => m.classList.remove("show"));
+        }
+      });
+
+      // FAQ Accordion
+      const accordionButtons = document.querySelectorAll(".faq-accordion .accordion-button");
+      accordionButtons.forEach(button => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetSelector = this.getAttribute("data-bs-target");
+          const targetEl = document.querySelector(targetSelector);
+          if (!targetEl) return;
+
+          const parentAccordion = this.closest(".accordion");
+          if (parentAccordion) {
+            parentAccordion.querySelectorAll(".accordion-collapse").forEach(collapse => {
+              if (collapse !== targetEl) {
+                collapse.classList.remove("show");
+              }
+            });
+            parentAccordion.querySelectorAll(".accordion-button").forEach(btn => {
+              if (btn !== this) {
+                btn.classList.add("collapsed");
+                btn.setAttribute("aria-expanded", "false");
+              }
+            });
+          }
+
+          if (targetEl.classList.contains("show")) {
+            targetEl.classList.remove("show");
+            this.classList.add("collapsed");
+            this.setAttribute("aria-expanded", "false");
+          } else {
+            targetEl.classList.add("show");
+            this.classList.remove("collapsed");
+            this.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+  </script>
+
+  <!-- AOS, VanillaTilt & Interactive Motion Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Website Development | Netlink IT Consultancy</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="front.html">
+                <img src="logo.png" alt="NETLINK Logo" class="logo-img">
+            </a>
+        </div>
+
+        <ul class="nav-links desktop-nav">
+            <li><a href="front.html">Home</a></li>
+            <li class="dropdown-link">
+                <a href="#" class="active">Solutions <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                <ul class="dropdown-menu-custom">
+                    <li><a href="front.html">Hardware & Infrastructure</a></li>
+                    <li><a href="software.html">Software & Digital Solutions</a></li>
+                    <li><a href="advisory.html">Digital Growth & Advisory</a></li>
+                    <li><a href="crm.html">CRM Solutions</a></li>
+                    <li><a href="erp.html">ERP Solutions</a></li>
+                    <li><a href="website-development.html">Website Development</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Innovations</a></li>
+            <li><a href="why-netlink.html">Why Netlink</a></li>
+            <li><a href="front.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="header-right">
+            <div class="phone-no">
+                <a href="tel:+919823323456" style="text-decoration:none; color:inherit;">
+                    <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
+                </a>
+            </div>
+            <a href="front.html#contact" class="btn-green desktop-btn text-decoration-none">Discuss Web Project &rarr;</a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <a href="front.html">
+                    <img src="logo.png" alt="NETLINK Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="front.html">Home</a></li>
+            <li><a href="front.html">Hardware & Infrastructure</a></li>
+            <li><a href="software.html">Software & Digital Solutions</a></li>
+            <li><a href="advisory.html">Digital Growth & Advisory</a></li>
+            <li><a href="crm.html">CRM Solutions</a></li>
+            <li><a href="erp.html">ERP Solutions</a></li>
+            <li><a href="website-development.html">Website Development</a></li>
+            <li><a href="index.html">Innovations</a></li>
+            <li><a href="why-netlink.html">Why Netlink</a></li>
+            <li><a href="front.html#contact">Contact</a></li>
+        </ul>
+        <div class="sidebar-action">
+            <a href="front.html#contact" class="btn-green text-decoration-none text-center">Discuss Web Project &rarr;</a>
+            <div class="phone-no">
+                <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
+            </div>
+        </div>
+    </aside>
+
+    <!-- Subpage Hero -->
+    <section class="subpage-hero">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+            <a href="#">Solutions</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+            <a href="#">Business Software Solutions</a> <i class="fa-solid fa-chevron-right breadcrumb-arrow"></i>
+            <span class="breadcrumb-active">Website Development</span>
+        </div>
+
+        <div class="hero-inner-grid">
+            <div class="hero-inner-text">
+                <span class="subpage-badge">WEBSITE DEVELOPMENT</span>
+                <h1>Websites Designed to Build Trust and <span>Generate Business.</span></h1>
+                <p>We create fast, responsive and professionally designed websites that communicate your strengths and guide visitors towards taking action.</p>
+                <div class="hero-action-btns">
+                    <button class="btn-green">Discuss Your Website <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn-outline"><i class="fa-solid fa-play play-icon"></i> View Website Types</button>
+                </div>
+            </div>
+
+            <div class="hero-mockup-wrapper">
+                <img src="images/indian-ecommerce.jpg" alt="Website Showcase Preview" class="hero-mockup-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- More Than Just Good Design Section -->
+    <section class="value-prop-section">
+        <div class="value-prop-container">
+            <div class="value-prop-media">
+                <img src="images/indian-developer.jpg" alt="Website on Laptop">
+            </div>
+            <div class="value-prop-content">
+                <span class="section-tag">MORE THAN JUST GOOD DESIGN</span>
+                <h2>A Website that Works as Hard as You Do</h2>
+                
+                <div class="value-points">
+                    <div class="val-point-item">
+                        <div class="val-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h4>Build Credibility</h4>
+                            <p>Present your business professionally and build trust instantly.</p>
+                        </div>
+                    </div>
+
+                    <div class="val-point-item">
+                        <div class="val-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div>
+                            <h4>Generate Enquiries</h4>
+                            <p>Designed to convert visitors into leads and real business opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div class="val-point-item">
+                        <div class="val-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <div>
+                            <h4>Work on Every Device</h4>
+                            <p>Fully responsive design for a smooth experience across all devices.</p>
+                        </div>
+                    </div>
+
+                    <div class="val-point-item">
+                        <div class="val-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div>
+                            <h4>Support Your Growth</h4>
+                            <p>Scalable websites that grow with your business and future needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Solutions Types (4 Grid Cards) -->
+    <section class="web-types-section">
+        <div class="showcase-header">
+            <h4>WHAT WE BUILD</h4>
+            <h2>Web Solutions for Every Business Need</h2>
+        </div>
+
+        <div class="web-types-grid">
+            <div class="web-type-card">
+                <div class="card-top-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="web-type-img">
+                    <img src="images/indian-corporate-building.jpg" alt="Corporate Websites">
+                </div>
+                <h3>Corporate Websites</h3>
+                <p>Professional websites that showcase your brand, services and expertise.</p>
+                <a href="#" class="explore-link">Explore This Solution <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="web-type-card">
+                <div class="card-top-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="web-type-img">
+                    <img src="images/indian-ecommerce.jpg" alt="E-commerce Websites">
+                </div>
+                <h3>E-commerce Websites</h3>
+                <p>Powerful online stores that drive sales and deliver great experiences.</p>
+                <a href="#" class="explore-link">Explore This Solution <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="web-type-card">
+                <div class="card-top-icon"><i class="fa-solid fa-landmark"></i></div>
+                <div class="web-type-img">
+                    <img src="images/indian-education-campus.jpg" alt="Institutional Websites">
+                </div>
+                <h3>Institutional Websites</h3>
+                <p>Websites for schools, hospitals, associations and organizations.</p>
+                <a href="#" class="explore-link">Explore This Solution <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="web-type-card">
+                <div class="card-top-icon"><i class="fa-solid fa-border-all"></i></div>
+                <div class="web-type-img">
+                    <img src="images/indian-tech-team.jpg" alt="Portals & Custom Websites">
+                </div>
+                <h3>Portals & Custom Websites</h3>
+                <p>Custom portals and dynamic websites built for unique business needs.</p>
+                <a href="#" class="explore-link">Explore This Solution <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Strip Bar -->
+    <section class="features-strip-section">
+        <div class="features-strip-header">
+            <h4>FEATURES THAT MAKE A DIFFERENCE</h4>
+        </div>
+        <div class="features-strip-grid">
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-display"></i>
+                <span>Responsive Design</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Lead Forms & WhatsApp</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>SEO Ready Structure</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Content Management</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span>Speed Optimized</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-lock"></i>
+                <span>Secure with SSL</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Analytics Integration</span>
+            </div>
+            <div class="feature-strip-item">
+                <i class="fa-solid fa-server"></i>
+                <span>Hosting & Maintenance</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interfaces Showcase -->
+    <section class="interfaces-section">
+        <div class="interfaces-header">
+            <div class="section-tag">SEE THE EXPERIENCE</div>
+            <h2>Designed for Visitors. Built for Business.</h2>
+        </div>
+
+        <div class="interfaces-grid">
+            <div class="interface-card">
+                <div class="interface-img-box">
+                    <img src="images/indian-ecommerce.jpg" alt="Homepage Layout">
+                </div>
+                <div class="interface-details">
+                    <h4>Homepage</h4>
+                    <p>Strong first impression with clear messaging and branding.</p>
+                </div>
+            </div>
+
+            <div class="interface-card">
+                <div class="interface-img-box">
+                    <img src="images/indian-tech-team.jpg" alt="Service Page">
+                </div>
+                <div class="interface-details">
+                    <h4>Service Page</h4>
+                    <p>Well-structured pages that explain your services and solutions.</p>
+                </div>
+            </div>
+
+            <div class="interface-card">
+                <div class="interface-img-box">
+                    <img src="images/indian-developer.jpg" alt="Mobile Experience">
+                </div>
+                <div class="interface-details">
+                    <h4>Mobile Experience</h4>
+                    <p>Smooth and engaging experience on every mobile device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Steps Journey Process -->
+    <section class="simple-process-section">
+        <div class="showcase-header">
+            <h4>YOUR WEBSITE JOURNEY</h4>
+            <h2>From Idea to Launch in 5 Simple Steps</h2>
+        </div>
+
+        <div class="simple-process-grid">
+            <div class="simple-step-card">
+                <div class="step-round-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h4>Discover</h4>
+                <p>We understand your business, goals and target audience.</p>
+            </div>
+
+            <div class="simple-step-card">
+                <div class="step-round-icon"><i class="fa-solid fa-sitemap"></i></div>
+                <h4>Structure</h4>
+                <p>Plan pages, content and user flow for best experience.</p>
+            </div>
+
+            <div class="simple-step-card">
+                <div class="step-round-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                <h4>Design</h4>
+                <p>Create modern, engaging and brand-aligned designs.</p>
+            </div>
+
+            <div class="simple-step-card">
+                <div class="step-round-icon"><i class="fa-solid fa-code"></i></div>
+                <h4>Develop</h4>
+                <p>Build fast, secure and responsive website.</p>
+            </div>
+
+            <div class="simple-step-card">
+                <div class="step-round-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <h4>Launch</h4>
+                <p>Go live with testing, training and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Right CTA Grid -->
+    <section class="faq-cta-section">
+        <div class="faq-cta-grid">
+            
+            <!-- Left FAQ Accordion -->
+            <div class="faq-block">
+                <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+                <div class="accordion-list">
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>How long does it take to build a website?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Usually, a basic website takes 1-2 weeks, while larger custom solutions can take 3-5 weeks depending on requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Will I be able to update the website myself?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we build easy-to-manage websites with standard CMS platforms so you can edit text and images easily.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Do you provide content writing and images?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we assist with professional copywriting and curated high-quality stock imagery.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Will the website be SEO-friendly?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Every site we build includes fundamental search engine optimization structures right out of the box.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Can you redesign our existing website?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Absolutely. We can modernize your legacy site for better design, mobile support, and conversions.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Do you provide hosting and maintenance?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, we offer complete cloud hosting management along with annual maintenance plans.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Can you integrate WhatsApp, payment or enquiry forms?</span>
+                            <i class="fa-solid fa-plus acc-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes, all required third-party integrations can be seamlessly integrated into your platform.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right CTA Box -->
+            <div class="side-cta-card">
+                <span class="side-cta-tag">READY TO GET STARTED?</span>
+                <h3>Let's Build a Website that Brings You More Business.</h3>
+                <p>Share your requirements and our experts will get in touch with the best solution.</p>
+                
+                <button class="btn-green full-width">Schedule a Consultation <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="side-cta-phone"><i class="fa-solid fa-phone"></i> Or Call Us: <strong>+91 98233 23456</strong></div>
+
+                <div class="side-cta-img">
+                    <img src="images/indian-leadership.jpg" alt="Team Discussion">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bottom Related Solutions Strip Bar -->
+    <section class="related-solutions-bar">
+        <span class="related-label">EXPLORE RELATED SOLUTIONS</span>
+        <div class="related-links-row">
+            <a href="#"><i class="fa-solid fa-chart-pie"></i> ERP Solutions <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"><i class="fa-solid fa-user-gear"></i> CRM Solutions <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"><i class="fa-solid fa-code"></i> Custom Software <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Applications <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#"><i class="fa-solid fa-network-wired"></i> API & Integrations <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="logo-footer mb-3">
+                    <a href="front.html">
+                        <img src="logo.png" alt="NETLINK Logo" style="height: 38px;">
+                    </a>
+                </div>
+                <p>A link to all your IT needs. From reliable infrastructure to powerful software, CRM, ERP and strategic technology advisory, we help businesses work smarter and grow faster.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="front.html">Hardware & Infrastructure</a></li>
+                    <li><a href="software.html">Software & Digital Solutions</a></li>
+                    <li><a href="advisory.html">Digital Growth & Advisory</a></li>
+                    <li><a href="crm.html">CRM Solutions</a></li>
+                    <li><a href="erp.html">ERP Solutions</a></li>
+                    <li><a href="website-development.html">Website Development</a></li>
+                    <li><a href="index.html">Netlink Innovations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="front.html">Home</a></li>
+                    <li><a href="why-netlink.html">Why Netlink</a></li>
+                    <li><a href="index.html">Innovations</a></li>
+                    <li><a href="front.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Chinnabai Road, Upper Ground, Sule Complex, Opp. S V Library, Madhumati Colony, Navsari, Gujarat 396445</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 98233 23456</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@netlinkitgroup.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accordion Script -->
+    <script>
+        const accHeaders = document.querySelectorAll('.accordion-header');
+        accHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+                
+                const icon = header.querySelector('.acc-icon');
+                if(item.classList.contains('active')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

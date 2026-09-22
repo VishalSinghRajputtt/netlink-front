@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Solutions | Netlink IT Consultancy</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS & Animate.css Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Header Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-header sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="front.html">
+        <img src="logo.png" alt="Netlink IT Consultancy Logo" class="header-logo">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="siteNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="front.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-green fw-bold" href="#" data-bs-toggle="dropdown">Solutions</a>
+            <ul class="dropdown-menu border-0 shadow-sm">
+              <li><a class="dropdown-item" href="front.html">Hardware & Infrastructure</a></li>
+              <li><a class="dropdown-item" href="software.html">Software & Digital Solutions</a></li>
+              <li><a class="dropdown-item" href="advisory.html">Digital Growth & Technology Advisory</a></li>
+              <li><a class="dropdown-item active text-green" href="crm.html">CRM Solutions</a></li>
+              <li><a class="dropdown-item" href="erp.html">ERP Solutions</a></li>
+              <li><a class="dropdown-item" href="website-development.html">Website Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Innovations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="why-netlink.html">Why Netlink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="front.html#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="tel:+919823323456" class="top-phone-link">
+            <i class="bi bi-telephone"></i> +91 98233 23456
+          </a>
+          <a href="front.html#contact" class="btn-primary-green">
+            Discuss Your CRM Needs <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Breadcrumb & Hero Section -->
+  <section class="hero-wrapper pb-5">
+    <div class="container">
+      <div class="site-breadcrumb">
+        <a href="index.html">Home</a> &gt; <a href="#">Solutions</a> &gt; <a href="#">Business Software Solutions</a> &gt; <span class="text-dark fw-bold">CRM Solutions</span>
+      </div>
+
+      <div class="row align-items-center mt-3">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <span class="section-badge">CRM SOLUTIONS</span>
+          <h1 class="hero-title" style="font-size: 2.9rem;">
+            Turn Every Enquiry<br>Into a Managed<br><span class="text-green">Opportunity.</span>
+          </h1>
+          <p class="hero-text">
+            Netlink CRM solutions help you capture leads, track conversations, manage follow-ups and convert more opportunities into loyal customers.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn-primary-green">
+              Improve Your Sales Process <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#" class="btn-outline-dark">
+              <i class="bi bi-play-fill text-green"></i> View CRM Capabilities
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="advisory-hero-image-wrapper">
+            <img src="crm-hero-banner.jpg" alt="Netlink CRM Software Dashboard Mockup" class="img-fluid rounded-4 shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Why Businesses Choose Netlink CRM -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-badge">WHY BUSINESSES CHOOSE NETLINK CRM</span>
+      </div>
+
+      <div class="why-crm-box">
+        <div class="why-crm-grid">
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png" class="card-icon-img" alt="Capture Leads">
+            </div>
+            <h6 class="card-box-title">Capture Leads Automatically</h6>
+            <p class="card-box-desc">Collect enquiries from multiple sources and never miss an opportunity.</p>
+          </div>
+
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" class="card-icon-img" alt="Follow-up">
+            </div>
+            <h6 class="card-box-title">Follow-up Without Gaps</h6>
+            <p class="card-box-desc">Set reminders, tasks and alerts to follow up at the right time.</p>
+          </div>
+
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/3067/3067260.png" class="card-icon-img" alt="Sales Pipeline">
+            </div>
+            <h6 class="card-box-title">Track Sales Pipeline</h6>
+            <p class="card-box-desc">See every opportunity's stage and take the right action.</p>
+          </div>
+
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" class="card-icon-img" alt="Know Your Customers">
+            </div>
+            <h6 class="card-box-title">Know Your Customers</h6>
+            <p class="card-box-desc">Access full customer history, interactions and communications.</p>
+          </div>
+
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="card-icon-img" alt="Team Performance">
+            </div>
+            <h6 class="card-box-title">Measure Team Performance</h6>
+            <p class="card-box-desc">Track activities, response time and conversions to improve results.</p>
+          </div>
+
+          <div class="why-crm-item">
+            <div class="icon-circle mb-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/4248/4248401.png" class="card-icon-img" alt="Retain Relationships">
+            </div>
+            <h6 class="card-box-title">Retain & Grow Relationships</h6>
+            <p class="card-box-desc">Manage service, renewals and repeat business effortlessly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. A Better Sales Journey -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-badge">A BETTER SALES JOURNEY</span>
+      </div>
+
+      <div class="sales-journey-7-grid">
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-file-earmark-plus"></i>
+          </div>
+          <h6 class="process-step-title">New Lead</h6>
+          <p class="process-step-desc">Lead captured from any source</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <h6 class="process-step-title">Contacted</h6>
+          <p class="process-step-desc">Initial contact established</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h6 class="process-step-title">Qualified</h6>
+          <p class="process-step-desc">Need understood & qualified</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-file-earmark-text"></i>
+          </div>
+          <h6 class="process-step-title">Proposal</h6>
+          <p class="process-step-desc">Proposal or quotation sent</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-sliders"></i>
+          </div>
+          <h6 class="process-step-title">Negotiation</h6>
+          <p class="process-step-desc">Discussion & negotiation</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-trophy"></i>
+          </div>
+          <h6 class="process-step-title">Won</h6>
+          <p class="process-step-desc">Deal closed successfully</p>
+          <div class="journey-arrow"><i class="bi bi-chevron-right"></i></div>
+        </div>
+
+        <div class="journey-step-col">
+          <div class="journey-step-icon">
+            <i class="bi bi-person-check"></i>
+          </div>
+          <h6 class="process-step-title">Customer</h6>
+          <p class="process-step-desc">Long-term relationship</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Real-Time Dashboards. Real Results. -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">REAL-TIME DASHBOARDS. REAL RESULTS.</span>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Lead Overview -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dashboard-card">
+            <div class="dashboard-card-img-wrap p-2">
+              <img src="lead.png" alt="Lead Overview" class="img-fluid rounded-3 shadow-sm border w-100" style="object-fit: contain; background: #ffffff;">
+            </div>
+            <div class="p-4 text-center">
+              <h5 class="exp-title">Lead Overview</h5>
+              <p class="exp-desc">Track lead volume, sources and conversion at every stage.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Follow-ups & Tasks -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dashboard-card">
+            <div class="dashboard-card-img-wrap p-2">
+              <img src="follow-up.png" alt="Follow-ups & Tasks" class="img-fluid rounded-3 shadow-sm border w-100" style="object-fit: contain; background: #ffffff;">
+            </div>
+            <div class="p-4 text-center">
+              <h5 class="exp-title">Follow-ups & Tasks</h5>
+              <p class="exp-desc">Never miss a follow-up with smart reminders and task lists.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Team Performance -->
+        <div class="col-lg-4 col-md-6">
+          <div class="dashboard-card">
+            <div class="dashboard-card-img-wrap p-2">
+              <img src="team.png" alt="Team Performance" class="img-fluid rounded-3 shadow-sm border w-100" style="object-fit: contain; background: #ffffff;">
+            </div>
+            <div class="p-4 text-center">
+              <h5 class="exp-title">Team Performance</h5>
+              <p class="exp-desc">Monitor individual and team performance to achieve more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. After Sales Service & Support -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-badge">AFTER SALES SERVICE & SUPPORT</span>
+      </div>
+
+      <div class="support-5-grid">
+        <div class="card-box">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-person-badge"></i>
+          </div>
+          <h6 class="card-box-title">Dedicated Account Manager</h6>
+          <p class="card-box-desc">A single point of contact for all your support and service needs.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-mortarboard"></i>
+          </div>
+          <h6 class="card-box-title">System Training</h6>
+          <p class="card-box-desc">Comprehensive training for your team to use CRM efficiently.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+          <h6 class="card-box-title">Regular System Updates</h6>
+          <p class="card-box-desc">New features, improvements and updates to keep your CRM future-ready.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h6 class="card-box-title">Technical Support</h6>
+          <p class="card-box-desc">Quick resolution via call, email or remote support whenever you need.</p>
+        </div>
+
+        <div class="card-box">
+          <div class="icon-circle mb-3">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h6 class="card-box-title">Data Backup & Security</h6>
+          <p class="card-box-desc">Secure data backups and strict access controls for complete peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ & Consultation CTA Banner (Two-Column Section) -->
+  <section class="py-5 bg-section-light">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <!-- Left Column: FAQ -->
+        <div class="col-lg-7">
+          <span class="section-badge mb-3">FREQUENTLY ASKED QUESTIONS</span>
+
+          <div class="accordion faq-accordion" id="crmFaqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Can CRM capture leads from our website or WhatsApp?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, Netlink CRM seamlessly integrates with your website forms, WhatsApp API, email, and social media platforms to automatically capture and centralise all incoming enquiries.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Can leads be assigned to different team members?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Vector-based automatic lead routing allows you to assign leads based on sales territory, product line, round-robin rules, or rep workload automatically.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Does CRM provide follow-up reminders and alerts?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, automated reminders via SMS, WhatsApp, pop-up notifications, and email ensure your sales team never misses a follow-up date.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Can management view team performance?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Real-time analytics dashboards provide complete visibility into conversion rates, call counts, deal progression, and individual sales rep activity.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  Can existing customer data be imported?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, our data migration tools support easy importing of existing records from Excel, CSV, Google Sheets, or legacy software with full data mapping support.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  Can CRM be customised for our sales process?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Netlink CRM is fully customizable. We tailor custom fields, pipelines, quotation formats, and status stages to match your business workflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                  Is CRM available on mobile?
+                </button>
+              </h2>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
+                <div class="accordion-body text-muted">
+                  Yes, our CRM features dedicated mobile apps for Android and iOS as well as a fully responsive web portal for access anywhere.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: CTA Banner -->
+        <div class="col-lg-5">
+          <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm d-flex flex-column justify-content-between">
+            <div>
+              <span class="section-badge">READY TO IMPROVE YOUR SALES?</span>
+              <h3 class="fw-bold text-dark my-3">
+                Let's Build Stronger Customer Relationships and Grow Together.
+              </h3>
+              <p class="text-muted mb-4">
+                Share your requirements and our experts will recommend the right CRM solution for you.
+              </p>
+            </div>
+
+            <div>
+              <a href="#" class="btn-primary-green w-100 justify-content-center mb-3 py-3">
+                Schedule a Consultation <i class="bi bi-arrow-right"></i>
+              </a>
+              <div class="text-center">
+                <a href="tel:+919823323456" class="top-phone-link fw-bold text-dark">
+                  <i class="bi bi-telephone text-green"></i> Or Call Us: +91 98233 23456
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Explore Related Solutions -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <span class="section-badge">EXPLORE RELATED SOLUTIONS</span>
+      </div>
+
+      <div class="solution-pill-wrapper">
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-gear-wide-connected text-green"></i> ERP Solutions <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-code-slash text-green"></i> Custom Business Software <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-phone text-green"></i> Mobile Applications <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#" class="solution-pill-item">
+          <i class="bi bi-plug text-green"></i> API & Integrations <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="advisory.html" class="solution-pill-item">
+          <i class="bi bi-graph-up text-green"></i> Digital Growth & Advisory <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Footer Section -->
+  <footer class="footer-dark-bg">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: About & Social -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <a href="front.html" class="d-inline-block mb-3">
+            <img src="logo.png" alt="Netlink Logo" class="footer-logo" style="max-height: 42px;">
+          </a>
+          <p class="small text-secondary mb-4">
+            A link to all your IT needs. From reliable infrastructure to powerful software, CRM, ERP and strategic technology advisory, we help businesses work smarter and grow faster.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="footer-social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Solutions -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <h6 class="footer-col-title">Solutions</h6>
+          <ul class="footer-menu-links">
+            <li><a href="front.html">Hardware & Infrastructure</a></li>
+            <li><a href="software.html">Software & Digital Solutions</a></li>
+            <li><a href="advisory.html">Digital Growth & Technology Advisory</a></li>
+            <li><a href="crm.html">CRM Solutions</a></li>
+            <li><a href="erp.html">ERP Solutions</a></li>
+            <li><a href="website-development.html">Website Development</a></li>
+            <li><a href="index.html">Netlink Innovations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="footer-col-title">Quick Links</h6>
+          <ul class="footer-menu-links">
+            <li><a href="front.html">Home</a></li>
+            <li><a href="why-netlink.html">Why Netlink</a></li>
+            <li><a href="index.html">Innovations</a></li>
+            <li><a href="front.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="footer-col-title">Contact Us</h6>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt text-green me-2"></i> Chinnabai Road, Upper Ground, Sule Complex, Opp. S V Library, Madhumati Colony, Navsari, Gujarat 396445
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone text-green me-2"></i> +91 98233 23456
+          </p>
+          <p class="small text-secondary mb-0">
+            <i class="bi bi-envelope text-green me-2"></i> info@netlinkitgroup.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-line d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0">© 2026 Netlink IT Consultancy Private Limited. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS, VanillaTilt & Interactive Motion Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

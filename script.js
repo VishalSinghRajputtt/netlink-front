@@ -3,31 +3,33 @@ document.addEventListener("DOMContentLoaded", () => {
     // ============================================================
     // 1. SIDEBAR MANAGEMENT
     // ============================================================
-    const menuBtn = document.getElementById('menuToggleBtn');
+    const menuBtn = document.getElementById('menuToggleBtn') || document.getElementById('menuToggle');
     const togglerIcon = document.getElementById('togglerIcon');
-    const sidebar = document.getElementById('mobileSidebar');
-    const closeBtn = document.getElementById('closeSidebarBtn');
+    const sidebar = document.getElementById('mobileSidebar') || document.getElementById('sidebar');
+    const closeBtn = document.getElementById('closeSidebarBtn') || document.getElementById('closeSidebar');
     const overlay = document.getElementById('sidebarOverlay');
     const body = document.body;
 
     function openSidebar() {
         if (menuBtn) menuBtn.classList.add('open');
         if (togglerIcon) togglerIcon.className = 'fas fa-times toggler-icon';
-        if (sidebar) sidebar.classList.add('open');
+        if (sidebar) { sidebar.classList.add('open'); sidebar.classList.add('active'); }
+        if (overlay) { overlay.classList.add('active'); overlay.classList.add('open'); }
         body.classList.add('sidebar-open');
     }
 
     function closeSidebar() {
         if (menuBtn) menuBtn.classList.remove('open');
         if (togglerIcon) togglerIcon.className = 'fas fa-bars toggler-icon';
-        if (sidebar) sidebar.classList.remove('open');
+        if (sidebar) { sidebar.classList.remove('open'); sidebar.classList.remove('active'); }
+        if (overlay) { overlay.classList.remove('active'); overlay.classList.remove('open'); }
         body.classList.remove('sidebar-open');
     }
 
     if (menuBtn) {
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            if (sidebar && sidebar.classList.contains('open')) {
+            if (sidebar && (sidebar.classList.contains('open') || sidebar.classList.contains('active'))) {
                 closeSidebar();
             } else {
                 openSidebar();
@@ -39,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (overlay) overlay.addEventListener('click', closeSidebar);
 
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && sidebar && sidebar.classList.contains('open')) {
+        if (e.key === 'Escape' && sidebar && (sidebar.classList.contains('open') || sidebar.classList.contains('active'))) {
             closeSidebar();
         }
     });
@@ -632,6 +634,57 @@ document.addEventListener('DOMContentLoaded', function() {
 
     goToSlide(0);
     startAutoplay();
+
+    // ============================================================
+    // LIVE MOTION & INTERACTIVE ANIMATION SUITE (Beingships-inspired)
+    // ============================================================
+    // 1. Ambient Cursor Glow Follower
+    if (!document.querySelector('.cursor-glow-spot') && window.innerWidth > 992) {
+        const glowSpot = document.createElement('div');
+        glowSpot.className = 'cursor-glow-spot';
+        document.body.appendChild(glowSpot);
+
+        document.addEventListener('mousemove', (e) => {
+            glowSpot.style.left = e.clientX + 'px';
+            glowSpot.style.top = e.clientY + 'px';
+        });
+    }
+
+    // 2. Initialize AOS (Animate On Scroll) Library
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+            once: true,
+            offset: 80
+        });
+    }
+
+    // 3. Initialize VanillaTilt on Interactive Cards & Mockups
+    if (typeof VanillaTilt !== 'undefined') {
+        const tiltTargets = document.querySelectorAll(
+            '.feature-card, .dashboard-card, .card-box, .industry-card, .erp-module-card, .crm-hero-graphic, .advisory-hero-image-wrapper'
+        );
+        VanillaTilt.init(tiltTargets, {
+            max: 8,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.15,
+            scale: 1.02
+        });
+    }
+
+    // 4. Inject Floating Particle Field in Hero Sections
+    const heroWrappers = document.querySelectorAll('.hero-wrapper, .hero');
+    heroWrappers.forEach(hero => {
+        if (!hero.querySelector('.hero-particle-field')) {
+            const field = document.createElement('div');
+            field.className = 'hero-particle-field';
+            field.innerHTML = '<span></span><span></span><span></span><span></span><span></span>';
+            hero.appendChild(field);
+        }
+    });
+});
 
     console.log('Studio carousel (card‑by‑card) ready');
 });
