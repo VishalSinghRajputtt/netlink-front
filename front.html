@@ -256,64 +256,186 @@
         </div>
     </section>
 
-    <!-- Ecosystem Pyramid Section -->
+    <!-- Netlink Office Gallery & Technology Ecosystem Section -->
     <section class="ecosystem-section">
-        <div class="eco-left">
-            <h4>THE NETLINK TECHNOLOGY ECOSYSTEM</h4>
-            <h2>Strong Foundation.<br>Smarter Systems.<br>Sustainable Growth.</h2>
-            <button class="btn-outline" style="margin-top: 15px;">Know More &rarr;</button>
-        </div>
+        <div class="eco-container">
+            <!-- Left Column: Gallery Carousel with Vertical Thumbnails -->
+            <div class="eco-gallery-col">
+                <!-- Vertical Thumbnails -->
+                <div class="eco-thumbnails" id="ecoThumbnails">
+                    <div class="eco-thumb active" data-index="0" title="Office Reception">
+                        <img src="images/gallery/thumb_1.jpg" alt="Office Reception Thumbnail">
+                    </div>
+                    <div class="eco-thumb" data-index="1" title="Open Workspace">
+                        <img src="images/gallery/thumb_2.jpg" alt="Open Workspace Thumbnail">
+                    </div>
+                    <div class="eco-thumb" data-index="2" title="Meeting & Conference">
+                        <img src="images/gallery/thumb_3.jpg" alt="Meeting & Conference Thumbnail">
+                    </div>
+                    <div class="eco-thumb" data-index="3" title="Executive Lounge">
+                        <img src="images/gallery/thumb_4.jpg" alt="Executive Lounge Thumbnail">
+                    </div>
+                    <div class="eco-thumb" data-index="4" title="Collaboration Hub">
+                        <img src="images/gallery/thumb_5.jpg" alt="Collaboration Hub Thumbnail">
+                    </div>
+                    <div class="eco-thumb" data-index="5" title="Innovation Corridor">
+                        <img src="images/gallery/thumb_6.jpg" alt="Innovation Corridor Thumbnail">
+                    </div>
+                </div>
 
-        <div class="pyramid-container">
-            <div class="pyramid-layer layer-1">
-                <h5>Business Growth</h5>
-                <p>More Revenue • Efficiency • Scalability</p>
-            </div>
-            <div class="pyramid-layer layer-2">
-                <h5>Digital Presence</h5>
-                <p>Website • SEO • Marketing • Branding</p>
-            </div>
-            <div class="pyramid-layer layer-3">
-                <h5>Business Software</h5>
-                <p>ERP • CRM • Automation • Applications</p>
-            </div>
-            <div class="pyramid-layer layer-4">
-                <h5>Infrastructure & Security</h5>
-                <p>Hardware • Networking • CCTV • Cloud</p>
-            </div>
-            <div class="pyramid-layer layer-5">
-                <h5>Technology Advisory</h5>
-                <p>Strategy • Planning • Process • Innovation</p>
-            </div>
-        </div>
+                <!-- Main Display with Carousel Controls -->
+                <div class="eco-main-display">
+                    <div class="eco-slider-wrapper" id="ecoSliderWrapper">
+                        <div class="eco-slide">
+                            <img src="images/gallery/slide_1.jpg" alt="Office Reception" class="eco-slide-img" id="mainSlideImg">
+                            <div class="eco-slide-overlay">
+                                <div class="eco-slide-text">
+                                    <h3 id="slideTitle">Office Reception</h3>
+                                    <p id="slideSubtitle">A modern workspace that drives innovation and collaboration.</p>
+                                </div>
+                                <div class="eco-slide-counter" id="slideCounter">01 / 06</div>
+                            </div>
+                        </div>
 
-        <div class="eco-right-list">
-            <div class="eco-item">
-                <div class="eco-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885417.png" alt="Integrated Solutions" class="eco-icon-img"></div>
-                <div class="eco-item-text">
-                    <h4>Integrated Solutions</h4>
-                    <p>All your IT needs connected seamlessly for maximum impact.</p>
+                        <!-- Prev / Next Navigation Arrows -->
+                        <button class="eco-nav-btn eco-prev-btn" id="ecoPrevBtn" aria-label="Previous Slide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="eco-nav-btn eco-next-btn" id="ecoNextBtn" aria-label="Next Slide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="eco-pagination" id="ecoPagination">
+                        <span class="eco-dot active" data-index="0"></span>
+                        <span class="eco-dot" data-index="1"></span>
+                        <span class="eco-dot" data-index="2"></span>
+                        <span class="eco-dot" data-index="3"></span>
+                        <span class="eco-dot" data-index="4"></span>
+                        <span class="eco-dot" data-index="5"></span>
+                    </div>
                 </div>
             </div>
-            <div class="eco-item">
-                <div class="eco-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Business First Approach" class="eco-icon-img"></div>
-                <div class="eco-item-text">
-                    <h4>Business First Approach</h4>
-                    <p>We understand your goals and design solutions around them.</p>
-                </div>
+
+            <!-- Middle Column: 5 Action & Department Cards -->
+            <div class="eco-cards-col">
+                <a href="#office" class="eco-card eco-card-green" data-slide="0">
+                    <div class="eco-card-left">
+                        <div class="eco-card-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="eco-card-text">
+                            <h4>Office</h4>
+                            <span>Our Workspace</span>
+                        </div>
+                    </div>
+                    <div class="eco-card-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="why-netlink.html#team" class="eco-card eco-card-purple" data-slide="1">
+                    <div class="eco-card-left">
+                        <div class="eco-card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="eco-card-text">
+                            <h4>Team</h4>
+                            <span>Our People</span>
+                        </div>
+                    </div>
+                    <div class="eco-card-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="advisory.html" class="eco-card eco-card-cyan" data-slide="2">
+                    <div class="eco-card-left">
+                        <div class="eco-card-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div class="eco-card-text">
+                            <h4>Thoughts</h4>
+                            <span>Ideas & Brainstorming</span>
+                        </div>
+                    </div>
+                    <div class="eco-card-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="software.html" class="eco-card eco-card-blue" data-slide="3">
+                    <div class="eco-card-left">
+                        <div class="eco-card-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="eco-card-text">
+                            <h4>Process</h4>
+                            <span>How We Work</span>
+                        </div>
+                    </div>
+                    <div class="eco-card-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="advisory.html" class="eco-card eco-card-navy" data-slide="4">
+                    <div class="eco-card-left">
+                        <div class="eco-card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="eco-card-text">
+                            <h4>Strategy</h4>
+                            <span>Our Growth Plan</span>
+                        </div>
+                    </div>
+                    <div class="eco-card-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </a>
             </div>
-            <div class="eco-item">
-                <div class="eco-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2904/2904835.png" alt="Reliable Support" class="eco-icon-img"></div>
-                <div class="eco-item-text">
-                    <h4>Reliable Support</h4>
-                    <p>From implementation to ongoing support, we're always there.</p>
+
+            <!-- Right Column: 4 Value Proposition Pillars -->
+            <div class="eco-features-col">
+                <div class="eco-feature-item">
+                    <div class="eco-feature-icon">
+                        <img src="images/gallery/feature_icon_1.png" alt="Integrated Solutions">
+                    </div>
+                    <div class="eco-feature-text">
+                        <h4>Integrated Solutions</h4>
+                        <p>All your IT needs connected seamlessly for maximum impact.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="eco-item">
-                <div class="eco-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2586/2586488.png" alt="Future Ready" class="eco-icon-img"></div>
-                <div class="eco-item-text">
-                    <h4>Future Ready</h4>
-                    <p>Scalable, secure and built to adapt to tomorrow's challenges.</p>
+
+                <div class="eco-feature-item">
+                    <div class="eco-feature-icon">
+                        <img src="images/gallery/feature_icon_2.png" alt="Business First Approach">
+                    </div>
+                    <div class="eco-feature-text">
+                        <h4>Business First Approach</h4>
+                        <p>We understand your goals and design solutions around them.</p>
+                    </div>
+                </div>
+
+                <div class="eco-feature-item">
+                    <div class="eco-feature-icon">
+                        <img src="images/gallery/feature_icon_3.png" alt="Reliable Support">
+                    </div>
+                    <div class="eco-feature-text">
+                        <h4>Reliable Support</h4>
+                        <p>From implementation to ongoing support, we're always there.</p>
+                    </div>
+                </div>
+
+                <div class="eco-feature-item">
+                    <div class="eco-feature-icon">
+                        <img src="images/gallery/feature_icon_4.png" alt="Future Ready">
+                    </div>
+                    <div class="eco-feature-text">
+                        <h4>Future Ready</h4>
+                        <p>Scalable, secure and built to adapt to tomorrow's challenges.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -463,6 +585,162 @@
                 }
             }
         });
+
+        // ==========================================
+        // Modern Office Gallery Carousel Controller
+        // ==========================================
+        const gallerySlides = [
+            {
+                title: "Office Reception",
+                subtitle: "A modern workspace that drives innovation and collaboration.",
+                counter: "01 / 06",
+                img: "images/gallery/slide_1.jpg"
+            },
+            {
+                title: "Open Workspace",
+                subtitle: "High-productivity workstations designed for agile team collaboration.",
+                counter: "02 / 06",
+                img: "images/gallery/slide_2.jpg"
+            },
+            {
+                title: "Meeting & Conference",
+                subtitle: "Modern facilities equipped with smart technology for impactful discussions.",
+                counter: "03 / 06",
+                img: "images/gallery/slide_3.jpg"
+            },
+            {
+                title: "Executive Lounge",
+                subtitle: "Inspiring and comfortable environment for focused leadership brainstorming.",
+                counter: "04 / 06",
+                img: "images/gallery/slide_4.jpg"
+            },
+            {
+                title: "Collaboration Hub",
+                subtitle: "Interactive open breakout spaces facilitating swift problem solving.",
+                counter: "05 / 06",
+                img: "images/gallery/slide_5.jpg"
+            },
+            {
+                title: "Innovation Corridor",
+                subtitle: "Architectural design integrating natural light and connectivity.",
+                counter: "06 / 06",
+                img: "images/gallery/slide_6.jpg"
+            }
+        ];
+
+        let currentSlideIdx = 0;
+        let slideInterval = null;
+        const mainSlideImg = document.getElementById('mainSlideImg');
+        const slideTitle = document.getElementById('slideTitle');
+        const slideSubtitle = document.getElementById('slideSubtitle');
+        const slideCounter = document.getElementById('slideCounter');
+        const thumbs = document.querySelectorAll('.eco-thumb');
+        const dots = document.querySelectorAll('.eco-dot');
+        const prevBtn = document.getElementById('ecoPrevBtn');
+        const nextBtn = document.getElementById('ecoNextBtn');
+        const sliderWrapper = document.getElementById('ecoSliderWrapper');
+
+        function updateSlide(newIdx) {
+            if (newIdx < 0) newIdx = gallerySlides.length - 1;
+            if (newIdx >= gallerySlides.length) newIdx = 0;
+            currentSlideIdx = newIdx;
+
+            const slide = gallerySlides[currentSlideIdx];
+
+            if (mainSlideImg) {
+                mainSlideImg.classList.add('fade-out');
+                setTimeout(() => {
+                    mainSlideImg.src = slide.img;
+                    mainSlideImg.alt = slide.title;
+                    if (slideTitle) slideTitle.textContent = slide.title;
+                    if (slideSubtitle) slideSubtitle.textContent = slide.subtitle;
+                    if (slideCounter) slideCounter.textContent = slide.counter;
+                    mainSlideImg.classList.remove('fade-out');
+                }, 150);
+            }
+
+            thumbs.forEach((thumb, idx) => {
+                thumb.classList.toggle('active', idx === currentSlideIdx);
+            });
+
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentSlideIdx);
+            });
+        }
+
+        // Thumbnails Click
+        thumbs.forEach((thumb) => {
+            thumb.addEventListener('click', () => {
+                const idx = parseInt(thumb.getAttribute('data-index'), 10);
+                updateSlide(idx);
+                resetAutoSlide();
+            });
+        });
+
+        // Pagination Dots Click
+        dots.forEach((dot) => {
+            dot.addEventListener('click', () => {
+                const idx = parseInt(dot.getAttribute('data-index'), 10);
+                updateSlide(idx);
+                resetAutoSlide();
+            });
+        });
+
+        // Navigation Arrows
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                updateSlide(currentSlideIdx - 1);
+                resetAutoSlide();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                updateSlide(currentSlideIdx + 1);
+                resetAutoSlide();
+            });
+        }
+
+        // Middle Category Cards Slide Sync
+        const ecoCards = document.querySelectorAll('.eco-card');
+        ecoCards.forEach((card) => {
+            card.addEventListener('click', (e) => {
+                const slideNum = card.getAttribute('data-slide');
+                if (slideNum !== null) {
+                    const idx = parseInt(slideNum, 10);
+                    if (!isNaN(idx) && idx < gallerySlides.length) {
+                        updateSlide(idx);
+                        resetAutoSlide();
+                    }
+                }
+            });
+        });
+
+        // Auto slide every 6 seconds
+        function startAutoSlide() {
+            slideInterval = setInterval(() => {
+                updateSlide(currentSlideIdx + 1);
+            }, 6000);
+        }
+
+        function stopAutoSlide() {
+            if (slideInterval) {
+                clearInterval(slideInterval);
+                slideInterval = null;
+            }
+        }
+
+        function resetAutoSlide() {
+            stopAutoSlide();
+            startAutoSlide();
+        }
+
+        if (sliderWrapper) {
+            sliderWrapper.addEventListener('mouseenter', stopAutoSlide);
+            sliderWrapper.addEventListener('mouseleave', startAutoSlide);
+        }
+
+        startAutoSlide();
     </script>
 </body>
 
