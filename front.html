@@ -440,22 +440,116 @@
         </div>
     </section>
 
-    <!-- CTA Banner Section -->
-    <div class="cta-banner">
-        <div class="cta-left">
-            <div class="cta-avatars">
-                <div class="avatar-box"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Consultant" class="avatar-icon-img"></div>
+    <!-- 4 Streams Consultation & Advisory Showcase Section -->
+    <section class="consultation-section" id="consultation">
+        <div class="consult-container">
+            <!-- Left Column: Content & 4 Department Streams -->
+            <div class="consult-content">
+                <span class="consult-tag">4 Core Streams &bull; 1 Partner</span>
+                <h2 class="consult-title">Not Sure Which Solution Fits Your Business?</h2>
+                <p class="consult-desc">
+                    Netlink powers businesses across 4 specialized technology departments. Select any stream below to explore tailored solutions or connect directly with our senior IT advisors:
+                </p>
+
+                <!-- 4 Departments Grid -->
+                <div class="consult-streams-grid" id="consultStreamsGrid">
+                    <!-- Stream 1: Hardware -->
+                    <div class="stream-pill-card active" data-stream="0" data-img="images/comuter hardware.jpeg" data-tag="Department 01 / 04" data-badge="Hardware & Infrastructure">
+                        <div class="stream-pill-icon icon-hardware">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <div class="stream-pill-info">
+                            <h4>Hardware & Infrastructure</h4>
+                            <span>Computers, Networking, CCTV & Cloud Setup</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right stream-pill-arrow"></i>
+                    </div>
+
+                    <!-- Stream 2: Software -->
+                    <div class="stream-pill-card" data-stream="1" data-img="images/softweare.jpeg" data-tag="Department 02 / 04" data-badge="Software & Digital Solutions">
+                        <div class="stream-pill-icon icon-software">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="stream-pill-info">
+                            <h4>Software & Digital Solutions</h4>
+                            <span>Websites, Custom Web Apps, ERP & CRM</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right stream-pill-arrow"></i>
+                    </div>
+
+                    <!-- Stream 3: Advisory -->
+                    <div class="stream-pill-card" data-stream="2" data-img="images/indian-advisory-team.jpg" data-tag="Department 03 / 04" data-badge="Digital Growth & Advisory">
+                        <div class="stream-pill-icon icon-advisory">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="stream-pill-info">
+                            <h4>Digital Growth & Advisory</h4>
+                            <span>Strategy, Process Automation & Consulting</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right stream-pill-arrow"></i>
+                    </div>
+
+                    <!-- Stream 4: Innovations -->
+                    <div class="stream-pill-card" data-stream="3" data-img="images/netlink-innov.webp" data-tag="Department 04 / 04" data-badge="Netlink Innovations">
+                        <div class="stream-pill-icon icon-innovations">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="stream-pill-info">
+                            <h4>Netlink Innovations</h4>
+                            <span>Exclusive In-House SaaS & Digital Products</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right stream-pill-arrow"></i>
+                    </div>
+                </div>
+
+                <!-- Timing & Channels Row -->
+                <div class="consult-meta-row">
+                    <div class="consult-timing-mini">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Discovery Sessions: <strong>Mon &ndash; Sat (10 AM &ndash; 7 PM)</strong></span>
+                    </div>
+                    <div class="consult-channels-mini">
+                        <span class="channels-text">Available On:</span>
+                        <div class="channel-dots">
+                            <a href="https://wa.me/919823323456" target="_blank" class="dot-btn dot-whatsapp" title="WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="tel:+919823323456" class="dot-btn dot-phone" title="Direct Phone Call"><i class="fa-solid fa-phone"></i></a>
+                            <span class="dot-btn dot-video" title="Google Meet / Video Call"><i class="fa-solid fa-video"></i></span>
+                            <span class="dot-btn dot-office" title="In-Person Office Meeting"><i class="fa-solid fa-handshake"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action CTAs -->
+                <div class="consult-actions">
+                    <a href="#contact" class="btn-green consult-btn-primary">Schedule Consultation &rarr;</a>
+                    <a href="tel:+919823323456" class="consult-btn-call">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Or Call Directly: <strong>+91 98233 23456</strong></span>
+                    </a>
+                </div>
             </div>
-            <div class="cta-text">
-                <h3>Not sure which solution is right for you?</h3>
-                <p>Let our experts understand your requirement and recommend the best way forward.</p>
+
+            <!-- Right Column: Interactive Image on the RIGHT SIDE -->
+            <div class="consult-visual">
+                <div class="consult-img-wrap">
+                    <img src="images/comuter hardware.jpeg" alt="Hardware & Infrastructure Department" id="consultStreamImg">
+                    <!-- Top floating department badge -->
+                    <div class="consult-stream-indicator" id="streamIndicator">
+                        <span class="indicator-dot"></span>
+                        <span id="streamIndicatorText">Department 01 / 04: Hardware & Infrastructure</span>
+                    </div>
+                    <!-- Bottom floating trust badge -->
+                    <div class="consult-badge-float">
+                        <div class="badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="badge-text">
+                            <strong>Expert Departmental Guidance</strong>
+                            <span>100% Tailored &amp; Confidential Roadmap</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="cta-right">
-            <button class="btn-green">Schedule a Consultation &rarr;</button>
-            <div class="cta-phone">Or Call Us: <strong>+91 98233 23456</strong></div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -740,6 +834,67 @@
         }
 
         startAutoSlide();
+
+        // ==========================================
+        // 4 Streams Consultation Interactive Controller
+        // ==========================================
+        const streamCards = document.querySelectorAll('.stream-pill-card');
+        const streamImg = document.getElementById('consultStreamImg');
+        const streamIndicatorText = document.getElementById('streamIndicatorText');
+        let currentStreamIdx = 0;
+        let streamTimer = null;
+
+        function setStream(idx) {
+            if (!streamCards[idx]) return;
+            currentStreamIdx = idx;
+            const targetCard = streamCards[idx];
+            const newImg = targetCard.getAttribute('data-img');
+            const newTag = targetCard.getAttribute('data-tag');
+            const newBadge = targetCard.getAttribute('data-badge');
+
+            streamCards.forEach((c, i) => c.classList.toggle('active', i === idx));
+
+            if (streamImg && newImg) {
+                streamImg.classList.add('fade-out');
+                setTimeout(() => {
+                    streamImg.src = newImg;
+                    streamImg.alt = newBadge;
+                    if (streamIndicatorText) {
+                        streamIndicatorText.textContent = `${newTag}: ${newBadge}`;
+                    }
+                    streamImg.classList.remove('fade-out');
+                }, 150);
+            }
+        }
+
+        streamCards.forEach((card, idx) => {
+            card.addEventListener('click', () => {
+                setStream(idx);
+                restartStreamAuto();
+            });
+            card.addEventListener('mouseenter', () => {
+                setStream(idx);
+                clearInterval(streamTimer);
+            });
+            card.addEventListener('mouseleave', () => {
+                startStreamAuto();
+            });
+        });
+
+        function startStreamAuto() {
+            clearInterval(streamTimer);
+            streamTimer = setInterval(() => {
+                let nextIdx = (currentStreamIdx + 1) % streamCards.length;
+                setStream(nextIdx);
+            }, 5000);
+        }
+
+        function restartStreamAuto() {
+            clearInterval(streamTimer);
+            startStreamAuto();
+        }
+
+        startStreamAuto();
     </script>
 </body>
 
