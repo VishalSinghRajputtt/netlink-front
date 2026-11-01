@@ -46,7 +46,7 @@
                     <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
                 </a>
             </div>
-            <a href="#contact" class="btn-green desktop-btn text-decoration-none">Discuss Your Requirement &rarr;</a>
+            <a href="javascript:void(0)" onclick="openInquiryModal('General Consultation')" class="btn-green desktop-btn text-decoration-none">Discuss Your Requirement &rarr;</a>
             <div class="menu-toggle" id="menuToggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -81,7 +81,7 @@
         </ul>
 
         <div class="sidebar-action">
-            <a href="#contact" class="btn-green text-decoration-none text-center">Discuss Your Requirement &rarr;</a>
+            <a href="javascript:void(0)" onclick="openInquiryModal('General Consultation')" class="btn-green text-decoration-none text-center">Discuss Your Requirement &rarr;</a>
             <div class="phone-no">
                 <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
             </div>
@@ -99,8 +99,7 @@
             <h1>One Technology Partner for Every Stage of <span>Your Business</span></h1>
             <p>From reliable IT infrastructure and security to custom software and strategic consulting, Netlink helps businesses operate efficiently and grow confidently.</p>
             <div class="hero-btns">
-                <button class="btn-green">Explore Our Solutions &rarr;</button>
-                <button class="btn-outline"><i class="fa-solid fa-phone"></i> Talk to a Consultant</button>
+                <button class="btn-green" onclick="openInquiryModal('General Consultation')"><i class="fa-solid fa-phone"></i> Talk to a Consultant</button>
             </div>
         </div>
 
@@ -110,7 +109,7 @@
     </section>
 
     <!-- Feature Cards Section -->
-    <section class="cards-section">
+    <section class="cards-section" id="solutions">
         <div class="feature-card">
             <div class="card-img">
                 <img src="images/comuter hardware.jpeg" alt="Hardware">
@@ -317,9 +316,9 @@
                 </div>
             </div>
 
-            <!-- Middle Column: 5 Action & Department Cards -->
+            <!-- Middle Column: 5 Department Cards -->
             <div class="eco-cards-col">
-                <a href="#office" class="eco-card eco-card-green" data-slide="0">
+                <div class="eco-card eco-card-green" data-slide="0">
                     <div class="eco-card-left">
                         <div class="eco-card-icon">
                             <i class="fa-solid fa-building"></i>
@@ -329,12 +328,9 @@
                             <span>Our Workspace</span>
                         </div>
                     </div>
-                    <div class="eco-card-arrow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </a>
+                </div>
 
-                <a href="why-netlink.html#team" class="eco-card eco-card-purple" data-slide="1">
+                <div class="eco-card eco-card-purple" data-slide="1">
                     <div class="eco-card-left">
                         <div class="eco-card-icon">
                             <i class="fa-solid fa-users"></i>
@@ -344,12 +340,9 @@
                             <span>Our People</span>
                         </div>
                     </div>
-                    <div class="eco-card-arrow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </a>
+                </div>
 
-                <a href="advisory.html" class="eco-card eco-card-cyan" data-slide="2">
+                <div class="eco-card eco-card-cyan" data-slide="2">
                     <div class="eco-card-left">
                         <div class="eco-card-icon">
                             <i class="fa-regular fa-lightbulb"></i>
@@ -359,12 +352,9 @@
                             <span>Ideas & Brainstorming</span>
                         </div>
                     </div>
-                    <div class="eco-card-arrow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </a>
+                </div>
 
-                <a href="software.html" class="eco-card eco-card-blue" data-slide="3">
+                <div class="eco-card eco-card-blue" data-slide="3">
                     <div class="eco-card-left">
                         <div class="eco-card-icon">
                             <i class="fa-solid fa-gear"></i>
@@ -374,12 +364,9 @@
                             <span>How We Work</span>
                         </div>
                     </div>
-                    <div class="eco-card-arrow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </a>
+                </div>
 
-                <a href="advisory.html" class="eco-card eco-card-navy" data-slide="4">
+                <div class="eco-card eco-card-navy" data-slide="4">
                     <div class="eco-card-left">
                         <div class="eco-card-icon">
                             <i class="fa-solid fa-chart-line"></i>
@@ -389,10 +376,7 @@
                             <span>Our Growth Plan</span>
                         </div>
                     </div>
-                    <div class="eco-card-arrow">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </a>
+                </div>
             </div>
 
             <!-- Right Column: 4 Value Proposition Pillars -->
@@ -521,10 +505,14 @@
 
                 <!-- Action CTAs -->
                 <div class="consult-actions">
-                    <a href="#contact" class="btn-green consult-btn-primary">Schedule Consultation &rarr;</a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('General Consultation')" class="btn-green consult-btn-primary">Schedule Consultation &rarr;</a>
+                    <a href="https://wa.me/919823323456?text=Hi%20Netlink%2C%20I%20would%20like%20to%20discuss%20my%20business%20technology%20requirements" target="_blank" class="consult-btn-whatsapp" title="Chat on WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>WhatsApp Us</span>
+                    </a>
                     <a href="tel:+919823323456" class="consult-btn-call">
                         <i class="fa-solid fa-phone"></i>
-                        <span>Or Call Directly: <strong>+91 98233 23456</strong></span>
+                        <span>Or Call: <strong>+91 98233 23456</strong></span>
                     </a>
                 </div>
             </div>
@@ -550,6 +538,59 @@
             </div>
         </div>
     </section>
+
+    <!-- Universal Inquiry Popup Modal -->
+    <div class="inquiry-modal-overlay" id="inquiryModalOverlay" onclick="if(event.target===this) closeInquiryModal()">
+        <div class="inquiry-modal" role="dialog" aria-modal="true">
+            <button class="inquiry-modal-close" onclick="closeInquiryModal()" aria-label="Close Inquiry Form">&times;</button>
+            <div class="inquiry-modal-header">
+                <span class="inquiry-badge"><i class="fa-solid fa-bolt"></i> Quick Inquiry</span>
+                <h3>Discuss Your Requirement</h3>
+                <p>Tell us what you're looking to build or optimize. Our senior technology advisors will connect with you within 2 business hours.</p>
+            </div>
+            <form class="inquiry-form" id="universalInquiryForm" onsubmit="handleInquirySubmit(event)">
+                <div class="form-group">
+                    <label for="inqName">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="inqName" name="name" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label for="inqPhone">Phone / WhatsApp <span class="required">*</span></label>
+                        <input type="tel" id="inqPhone" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inqEmail">Work Email</label>
+                        <input type="email" id="inqEmail" name="email" placeholder="rahul@company.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inqDepartment">Department / Solution Needed <span class="required">*</span></label>
+                    <select id="inqDepartment" name="department" required>
+                        <option value="General Consultation">General Consultation / Not Sure</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="ERP Solutions">ERP Solutions</option>
+                        <option value="CRM Solutions">CRM Solutions</option>
+                        <option value="Custom Business Software">Custom Business Software</option>
+                        <option value="Mobile Applications">Mobile Applications</option>
+                        <option value="API & Integration Services">API &amp; Integration Services</option>
+                        <option value="Hardware & Infrastructure">Hardware &amp; Infrastructure</option>
+                        <option value="Digital Growth & Advisory">Digital Growth &amp; Advisory</option>
+                        <option value="Netlink Innovations">Netlink Innovations</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inqMessage">Brief Description of Your Requirement</label>
+                    <textarea id="inqMessage" name="message" rows="3" placeholder="Tell us about your project timeline, current challenges or desired features..."></textarea>
+                </div>
+                <div class="form-submit-row">
+                    <button type="submit" class="btn-green form-submit-btn">
+                        <span>Submit Requirement &rarr;</span>
+                    </button>
+                    <span class="form-note"><i class="fa-solid fa-lock"></i> 100% Privacy Protected</span>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -895,6 +936,52 @@
         }
 
         startStreamAuto();
+
+        // ==========================================
+        // Universal Inquiry Modal Controller
+        // ==========================================
+        function openInquiryModal(defaultDept) {
+            const overlay = document.getElementById('inquiryModalOverlay');
+            const deptSelect = document.getElementById('inqDepartment');
+            if (deptSelect && defaultDept) {
+                for (let i = 0; i < deptSelect.options.length; i++) {
+                    if (deptSelect.options[i].value.toLowerCase().includes(defaultDept.toLowerCase()) ||
+                        defaultDept.toLowerCase().includes(deptSelect.options[i].value.toLowerCase())) {
+                        deptSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            if (overlay) {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeInquiryModal() {
+            const overlay = document.getElementById('inquiryModalOverlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeInquiryModal();
+        });
+
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.name.value;
+            const phone = form.phone.value;
+            const dept = form.department.value;
+            const msg = form.message.value;
+
+            alert('Thank you, ' + name + '! Your inquiry for ' + dept + ' has been received. Our team will contact you shortly.');
+            closeInquiryModal();
+            form.reset();
+        }
     </script>
 </body>
 

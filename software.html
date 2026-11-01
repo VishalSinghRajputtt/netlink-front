@@ -49,7 +49,7 @@
                     <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
                 </a>
             </div>
-            <a href="front.html#contact" class="btn-green desktop-btn text-decoration-none">Discuss Requirement &rarr;</a>
+            <a href="javascript:void(0)" onclick="openInquiryModal('Software & Digital Solutions')" class="btn-green desktop-btn text-decoration-none">Discuss Requirement &rarr;</a>
             <div class="menu-toggle" id="menuToggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -80,7 +80,7 @@
             <li><a href="front.html#contact">Contact</a></li>
         </ul>
         <div class="sidebar-action">
-            <a href="front.html#contact" class="btn-green text-decoration-none text-center">Discuss Requirement &rarr;</a>
+            <a href="javascript:void(0)" onclick="openInquiryModal('Software & Digital Solutions'); closeMenu();" class="btn-green text-decoration-none text-center">Discuss Requirement &rarr;</a>
             <div class="phone-no">
                 <i class="fa-solid fa-phone" style="color: var(--primary-green);"></i> +91 98233 23456
             </div>
@@ -117,13 +117,9 @@
                         </p>
 
                         <div class="hero-actions">
-                            <a href="#" class="hero-btn-primary">
-                                <span>Explore Our Solutions</span>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a href="#" class="hero-btn-outline">
-                                <i class="fa-regular fa-circle-play"></i>
-                                Request Quote
+                            <a href="javascript:void(0)" onclick="openInquiryModal('Software & Digital Solutions')" class="hero-btn-primary">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span>Request Quote &rarr;</span>
                             </a>
                         </div>
                     </div>
@@ -133,58 +129,58 @@
                 <div class="col-lg-6">
                     <div class="hero-visual">
                         <!-- Floating Icons -->
-                        <div class="float-icon float-1">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Website" class="float-icon-img">
+                        <div class="float-icon float-1" title="Website Development">
+                            <img src="images/software/thumb-web.jpg" alt="Website" class="float-icon-img">
                         </div>
-                        <div class="float-icon float-2">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Software Code" class="float-icon-img">
+                        <div class="float-icon float-2" title="ERP Dashboard">
+                            <img src="images/software/thumb-erp.jpg" alt="ERP" class="float-icon-img">
                         </div>
-                        <div class="float-icon float-3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2586/2586488.png" alt="Mobile App" class="float-icon-img">
+                        <div class="float-icon float-3" title="Mobile App Development">
+                            <img src="images/software/thumb-mobile.jpg" alt="Mobile App" class="float-icon-img">
                         </div>
 
                         <div class="ticker-wrapper">
                             <div class="ticker-mask">
                                 <!-- Column 1 -->
                                 <div class="ticker-col scroll-move-up">
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Website" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Website Development')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-web.jpg" alt="Website" class="ticker-icon-img"></div>
                                         <h5>Website</h5>
                                         <span class="ticker-tag">Web & Digital</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ERP" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('ERP Solutions')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-erp.jpg" alt="ERP" class="ticker-icon-img"></div>
                                         <h5>ERP</h5>
                                         <span class="ticker-tag">Enterprise</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Custom Business Software" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Custom Business Software')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-custom.jpg" alt="Custom Business Software" class="ticker-icon-img"></div>
                                         <h5>Custom Business Software</h5>
                                         <span class="ticker-tag">Tailored Apps</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2586/2586488.png" alt="Mobile Applications" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Mobile Applications')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-mobile.jpg" alt="Mobile Applications" class="ticker-icon-img"></div>
                                         <h5>Mobile Applications</h5>
                                         <span class="ticker-tag">iOS & Android</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885417.png" alt="API & Integration Services" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('API & Integration Services')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-api.jpg" alt="API & Integration Services" class="ticker-icon-img"></div>
                                         <h5>API & Integration Services</h5>
                                         <span class="ticker-tag">Cloud & APIs</span>
                                     </div>
                                     <!-- Loop Repeat -->
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Website" class="ticker-icon-img"></div>
-                                        <h5>Website</h5>
-                                        <span class="ticker-tag">Web & Digital</span>
+                                    <div class="ticker-card" onclick="openInquiryModal('CRM Solutions')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-crm.jpg" alt="CRM Solutions" class="ticker-icon-img"></div>
+                                        <h5>CRM Platform</h5>
+                                        <span class="ticker-tag">Customer Growth</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ERP" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('ERP Solutions')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-erp.jpg" alt="ERP" class="ticker-icon-img"></div>
                                         <h5>ERP</h5>
                                         <span class="ticker-tag">Enterprise</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Custom Business Software" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Custom Business Software')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-custom.jpg" alt="Custom Business Software" class="ticker-icon-img"></div>
                                         <h5>Custom Business Software</h5>
                                         <span class="ticker-tag">Tailored Apps</span>
                                     </div>
@@ -192,44 +188,44 @@
 
                                 <!-- Column 2 -->
                                 <div class="ticker-col scroll-move-down">
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2586/2586488.png" alt="Mobile Applications" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Mobile Applications')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-mobile.jpg" alt="Mobile Applications" class="ticker-icon-img"></div>
                                         <h5>Mobile Applications</h5>
                                         <span class="ticker-tag">iOS & Android</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885417.png" alt="API & Integration Services" class="ticker-icon-img"></div>
-                                        <h5>API & Integration Services</h5>
-                                        <span class="ticker-tag">Cloud & APIs</span>
+                                    <div class="ticker-card" onclick="openInquiryModal('CRM Solutions')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-crm.jpg" alt="CRM Solutions" class="ticker-icon-img"></div>
+                                        <h5>CRM Platform</h5>
+                                        <span class="ticker-tag">Sales & Leads</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Website" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Website Development')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-web.jpg" alt="Website" class="ticker-icon-img"></div>
                                         <h5>Website</h5>
                                         <span class="ticker-tag">Web & Digital</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ERP" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('ERP Solutions')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-erp.jpg" alt="ERP" class="ticker-icon-img"></div>
                                         <h5>ERP</h5>
                                         <span class="ticker-tag">Enterprise</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Custom Business Software" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Custom Business Software')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-custom.jpg" alt="Custom Business Software" class="ticker-icon-img"></div>
                                         <h5>Custom Business Software</h5>
                                         <span class="ticker-tag">Tailored Apps</span>
                                     </div>
                                     <!-- Loop Repeat -->
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2586/2586488.png" alt="Mobile Applications" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Mobile Applications')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-mobile.jpg" alt="Mobile Applications" class="ticker-icon-img"></div>
                                         <h5>Mobile Applications</h5>
                                         <span class="ticker-tag">iOS & Android</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885417.png" alt="API & Integration Services" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('API & Integration Services')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-api.jpg" alt="API & Integration Services" class="ticker-icon-img"></div>
                                         <h5>API & Integration Services</h5>
                                         <span class="ticker-tag">Cloud & APIs</span>
                                     </div>
-                                    <div class="ticker-card">
-                                        <div class="ticker-icon-box"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Website" class="ticker-icon-img"></div>
+                                    <div class="ticker-card" onclick="openInquiryModal('Website Development')" style="cursor: pointer;">
+                                        <div class="ticker-icon-box"><img src="images/software/thumb-web.jpg" alt="Website" class="ticker-icon-img"></div>
                                         <h5>Website</h5>
                                         <span class="ticker-tag">Web & Digital</span>
                                     </div>
@@ -345,14 +341,14 @@
             <!-- Row 1: Website Development -->
             <div class="showcase-row">
                 <div class="showcase-media slant-left">
-                    <img src="images/indian-corporate-building.jpg" alt="Website Development">
+                    <img src="images/software/website-wireframe.jpg" alt="Website Development Screenshot">
                 </div>
                 <div class="showcase-info">
                     <h3>Website Development</h3>
-                    <p>Modern, responsive websites that attract, engage and convert visitors.</p>
+                    <p>Modern, responsive websites and web applications that attract, engage and convert visitors.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('Website Development')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -360,27 +356,27 @@
             <div class="showcase-row reverse">
                 <div class="showcase-info">
                     <h3>ERP Solutions</h3>
-                    <p>Centralize your operations, automate workflows and make smarter decisions.</p>
+                    <p>Centralize your inventory, operations, automate workflows and make smarter decisions with custom ERP dashboards.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('ERP Solutions')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="showcase-media slant-right">
-                    <img src="images/indian-tech-team.jpg" alt="ERP Solutions">
+                    <img src="images/software/erp-dashboard.jpg" alt="ERP System Dashboard">
                 </div>
             </div>
 
             <!-- Row 3: CRM Solutions -->
             <div class="showcase-row">
                 <div class="showcase-media slant-left">
-                    <img src="images/indian-advisory-team.jpg" alt="CRM Solutions">
+                    <img src="images/software/crm-dashboard.jpg" alt="CRM System Dashboard">
                 </div>
                 <div class="showcase-info">
                     <h3>CRM Solutions</h3>
-                    <p>Manage leads, delight customers and build long-term relationships.</p>
+                    <p>Manage leads, track pipelines, delight customers and build long-term relationships.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('CRM Solutions')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -388,27 +384,27 @@
             <div class="showcase-row reverse">
                 <div class="showcase-info">
                     <h3>Custom Business Software</h3>
-                    <p>Tailor-made applications built to fit your unique business processes.</p>
+                    <p>Tailor-made software built to fit your unique business processes, eliminate repetitive tasks and scale smoothly.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('Custom Business Software')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="showcase-media slant-right">
-                    <img src="images/indian-developer.jpg" alt="Custom Business Software">
+                    <img src="images/software/custom-software.jpg" alt="Custom Business Software Platform">
                 </div>
             </div>
 
             <!-- Row 5: Mobile Applications -->
             <div class="showcase-row">
                 <div class="showcase-media slant-left">
-                    <img src="images/indian-developer.jpg" alt="Mobile Applications">
+                    <img src="images/software/mobile-app.jpg" alt="Mobile Applications UI">
                 </div>
                 <div class="showcase-info">
                     <h3>Mobile Applications</h3>
-                    <p>Powerful mobile apps for Android and iOS that drive engagement on the go.</p>
+                    <p>Powerful mobile apps for Android and iOS that drive customer engagement and field operations on the go.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('Mobile Applications')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>   
 
@@ -416,13 +412,13 @@
             <div class="showcase-row reverse">
                 <div class="showcase-info">
                     <h3>API & Integration Services</h3>
-                    <p>Connect your systems and tools for seamless data flow.</p>
+                    <p>Connect your payment gateways, ERPs, CRMs, logistics and third-party tools for seamless data synchronization.</p>
                 </div>
                 <div class="showcase-action">
-                    <a href="#" class="showcase-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="javascript:void(0)" onclick="openInquiryModal('API & Integration Services')" class="showcase-link">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="showcase-media slant-right">
-                    <img src="images/indian-tech-team.jpg" alt="API & Integration Services">
+                    <img src="images/software/api-integration.jpg" alt="API & Integration Services Architecture">
                 </div>
             </div>
 
@@ -438,25 +434,25 @@
         </div>
 
         <div class="interfaces-grid">
-            <div class="interface-card">
+            <div class="interface-card" onclick="openInquiryModal('ERP Solutions')" style="cursor: pointer;">
                 <div class="interface-img-box">
-                    <img src="images/indian-ecommerce.jpg" alt="ERP Dashboard">
+                    <img src="images/software/erp-dashboard.jpg" alt="ERP Dashboard Screenshot">
                     <div class="expand-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
                 </div>
                 <div class="interface-card-footer">ERP Dashboard</div>
             </div>
 
-            <div class="interface-card">
+            <div class="interface-card" onclick="openInquiryModal('CRM Solutions')" style="cursor: pointer;">
                 <div class="interface-img-box">
-                    <img src="images/indian-tech-team.jpg" alt="CRM Dashboard">
+                    <img src="images/software/crm-dashboard.jpg" alt="CRM Dashboard Screenshot">
                     <div class="expand-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
                 </div>
                 <div class="interface-card-footer">CRM Dashboard</div>
             </div>
 
-            <div class="interface-card">
+            <div class="interface-card" onclick="openInquiryModal('Website Development')" style="cursor: pointer;">
                 <div class="interface-img-box">
-                    <img src="images/indian-ecommerce.jpg" alt="Website Preview">
+                    <img src="images/software/website-wireframe.jpg" alt="Website Preview Screenshot">
                     <div class="expand-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
                 </div>
                 <div class="interface-card-footer">Website Preview</div>
@@ -659,8 +655,61 @@
             </div>
         </div>
         <div class="cta-right">
-            <button class="btn-green dark">Schedule a Consultation &rarr;</button>
+            <button class="btn-green dark" onclick="openInquiryModal('General Consultation')">Schedule a Consultation &rarr;</button>
             <div class="cta-phone"><i class="fa-solid fa-phone"></i> Or Call Us: <strong>+91 88233 23456</strong></div>
+        </div>
+    </div>
+
+    <!-- Universal Inquiry Popup Modal -->
+    <div class="inquiry-modal-overlay" id="inquiryModalOverlay" onclick="if(event.target===this) closeInquiryModal()">
+        <div class="inquiry-modal" role="dialog" aria-modal="true">
+            <button class="inquiry-modal-close" onclick="closeInquiryModal()" aria-label="Close Inquiry Form">&times;</button>
+            <div class="inquiry-modal-header">
+                <span class="inquiry-badge"><i class="fa-solid fa-bolt"></i> Quick Inquiry</span>
+                <h3>Discuss Your Requirement</h3>
+                <p>Tell us what you're looking to build or optimize. Our senior technology advisors will connect with you within 2 business hours.</p>
+            </div>
+            <form class="inquiry-form" id="universalInquiryForm" onsubmit="handleInquirySubmit(event)">
+                <div class="form-group">
+                    <label for="inqName">Your Full Name <span class="required">*</span></label>
+                    <input type="text" id="inqName" name="name" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-row-2">
+                    <div class="form-group">
+                        <label for="inqPhone">Phone / WhatsApp <span class="required">*</span></label>
+                        <input type="tel" id="inqPhone" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inqEmail">Work Email</label>
+                        <input type="email" id="inqEmail" name="email" placeholder="rahul@company.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inqDepartment">Department / Solution Needed <span class="required">*</span></label>
+                    <select id="inqDepartment" name="department" required>
+                        <option value="Software & Digital Solutions">Software &amp; Digital Solutions</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="ERP Solutions">ERP Solutions</option>
+                        <option value="CRM Solutions">CRM Solutions</option>
+                        <option value="Custom Business Software">Custom Business Software</option>
+                        <option value="Mobile Applications">Mobile Applications</option>
+                        <option value="API & Integration Services">API &amp; Integration Services</option>
+                        <option value="Hardware & Infrastructure">Hardware &amp; Infrastructure</option>
+                        <option value="Digital Growth & Advisory">Digital Growth &amp; Advisory</option>
+                        <option value="Netlink Innovations">Netlink Innovations</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inqMessage">Brief Description of Your Requirement</label>
+                    <textarea id="inqMessage" name="message" rows="3" placeholder="Tell us about your project timeline, current challenges or desired features..."></textarea>
+                </div>
+                <div class="form-submit-row">
+                    <button type="submit" class="btn-green form-submit-btn">
+                        <span>Submit Requirement &rarr;</span>
+                    </button>
+                    <span class="form-note"><i class="fa-solid fa-lock"></i> 100% Privacy Protected</span>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -835,6 +884,51 @@
             updateStepUI(currentStep);
             startAutoStepper();
         });
+            // ==========================================
+        // Universal Inquiry Modal Controller
+        // ==========================================
+        function openInquiryModal(defaultDept) {
+            const overlay = document.getElementById('inquiryModalOverlay');
+            const deptSelect = document.getElementById('inqDepartment');
+            if (deptSelect && defaultDept) {
+                for (let i = 0; i < deptSelect.options.length; i++) {
+                    if (deptSelect.options[i].value.toLowerCase().includes(defaultDept.toLowerCase()) || 
+                        defaultDept.toLowerCase().includes(deptSelect.options[i].value.toLowerCase())) {
+                        deptSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            if (overlay) {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeInquiryModal() {
+            const overlay = document.getElementById('inquiryModalOverlay');
+            if (overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeInquiryModal();
+        });
+
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.name.value;
+            const phone = form.phone.value;
+            const dept = form.department.value;
+            const msg = form.message.value;
+            
+            alert('Thank you, ' + name + '! Your inquiry for ' + dept + ' has been received. Our team will contact you shortly.');
+            closeInquiryModal();
+            form.reset();
+        }
     </script>
 </body>
 
