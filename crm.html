@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -345,134 +346,102 @@
     </div>
   </section>
 
-  <!-- 7. FAQ & Consultation CTA Banner (Two-Column Section) -->
-  <section class="py-5 bg-section-light">
-    <div class="container">
-      <div class="row g-4 align-items-stretch">
-        <!-- Left Column: FAQ -->
-        <div class="col-lg-7">
-          <span class="section-badge mb-3">FREQUENTLY ASKED QUESTIONS</span>
-
-          <div class="accordion faq-accordion" id="crmFaqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  Can CRM capture leads from our website or WhatsApp?
-                </button>
-              </h2>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, Netlink CRM seamlessly integrates with your website forms, WhatsApp API, email, and social media platforms to automatically capture and centralise all incoming enquiries.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  Can leads be assigned to different team members?
-                </button>
-              </h2>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Vector-based automatic lead routing allows you to assign leads based on sales territory, product line, round-robin rules, or rep workload automatically.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                  Does CRM provide follow-up reminders and alerts?
-                </button>
-              </h2>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, automated reminders via SMS, WhatsApp, pop-up notifications, and email ensure your sales team never misses a follow-up date.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                  Can management view team performance?
-                </button>
-              </h2>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Real-time analytics dashboards provide complete visibility into conversion rates, call counts, deal progression, and individual sales rep activity.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                  Can existing customer data be imported?
-                </button>
-              </h2>
-              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, our data migration tools support easy importing of existing records from Excel, CSV, Google Sheets, or legacy software with full data mapping support.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                  Can CRM be customised for our sales process?
-                </button>
-              </h2>
-              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Netlink CRM is fully customizable. We tailor custom fields, pipelines, quotation formats, and status stages to match your business workflow.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                  Is CRM available on mobile?
-                </button>
-              </h2>
-              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#crmFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, our CRM features dedicated mobile apps for Android and iOS as well as a fully responsive web portal for access anywhere.
-                </div>
-              </div>
+  <!-- 7. FAQ & Consultation CTA Banner -->
+  <section class="faq-cta-section">
+    <div class="faq-cta-grid">
+      
+      <!-- Left FAQ Accordion -->
+      <div class="faq-block">
+        <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+        <div class="accordion-list">
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can CRM capture leads from our website or WhatsApp?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, Netlink CRM seamlessly integrates with your website forms, WhatsApp API, email, and social media platforms to automatically capture and centralise all incoming enquiries.</p>
             </div>
           </div>
-        </div>
 
-        <!-- Right Column: CTA Banner -->
-        <div class="col-lg-5">
-          <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm d-flex flex-column justify-content-between">
-            <div>
-              <span class="section-badge">READY TO IMPROVE YOUR SALES?</span>
-              <h3 class="fw-bold text-dark my-3">
-                Let's Build Stronger Customer Relationships and Grow Together.
-              </h3>
-              <p class="text-muted mb-4">
-                Share your requirements and our experts will recommend the right CRM solution for you.
-              </p>
-            </div>
-
-            <div>
-              <a href="#" class="btn-primary-green w-100 justify-content-center mb-3 py-3">
-                Schedule a Consultation <i class="bi bi-arrow-right"></i>
-              </a>
-              <div class="text-center">
-                <a href="tel:+919823323456" class="top-phone-link fw-bold text-dark">
-                  <i class="bi bi-telephone text-green"></i> Or Call Us: +91 98233 23456
-                </a>
-              </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can leads be assigned to different team members?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Vector-based automatic lead routing allows you to assign leads based on sales territory, product line, round-robin rules, or rep workload automatically.</p>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Does CRM provide follow-up reminders and alerts?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, automated reminders via SMS, WhatsApp, pop-up notifications, and email ensure your sales team never misses a follow-up date.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can management view team performance?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Real-time analytics dashboards provide complete visibility into conversion rates, call counts, deal progression, and individual sales rep activity.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can existing customer data be imported?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, our data migration tools support easy importing of existing records from Excel, CSV, Google Sheets, or legacy software with full data mapping support.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can CRM be customised for our sales process?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Netlink CRM is fully customizable. We tailor custom fields, pipelines, quotation formats, and status stages to match your business workflow.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Is CRM available on mobile?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, our CRM features dedicated mobile apps for Android and iOS as well as a fully responsive web portal for access anywhere.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!-- Right CTA Box -->
+      <div class="side-cta-card">
+        <span class="side-cta-tag">READY TO IMPROVE YOUR SALES?</span>
+        <h3>Let's Build Stronger Customer Relationships and Grow Together.</h3>
+        <p>Share your requirements and our experts will get in touch with the best solution.</p>
+        
+        <button class="btn-green full-width">Schedule a Consultation <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="side-cta-phone"><i class="fa-solid fa-phone"></i> Or Call Us: <strong>+91 98233 23456</strong></div>
+
+        <div class="side-cta-img">
+          <img src="images/indian-leadership.jpg" alt="Team Discussion">
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -580,5 +549,26 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
   <script src="script.js"></script>
+  <!-- Accordion Script -->
+  <script>
+    const accHeaders = document.querySelectorAll('.accordion-header');
+    accHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+        
+        const icon = header.querySelector('.acc-icon');
+        if (icon) {
+          if (item.classList.contains('active')) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>

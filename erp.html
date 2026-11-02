@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/animate.css/4.1.1/animate.min.css">
 
   <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -538,134 +539,102 @@
     </div>
   </section>
 
-  <!-- 9. FAQ & Consultation CTA Banner -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row g-4 align-items-stretch">
-        <!-- Left Column: FAQ -->
-        <div class="col-lg-7">
-          <span class="section-badge mb-3">FREQUENTLY ASKED QUESTIONS</span>
-
-          <div class="accordion faq-accordion" id="erpFaqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq1">
-                  Can ERP be implemented in phases?
-                </button>
-              </h2>
-              <div id="erpFaq1" class="accordion-collapse collapse show" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, Netlink ERP is modular. You can start with core modules like Sales, Purchase, and Accounts, and gradually add Inventory, HR, or Production modules as your business scales.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq2">
-                  Can ERP integrate with Tally or other software?
-                </button>
-              </h2>
-              <div id="erpFaq2" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, we provide seamless API and data sync connectors for Tally, WhatsApp, payment gateways, and third-party e-commerce platforms.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq3">
-                  Can existing Excel data be imported into ERP?
-                </button>
-              </h2>
-              <div id="erpFaq3" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, we provide bulk Excel/CSV import tools along with expert data migration assistance to transition all your items, customers, and opening balances without data loss.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq4">
-                  Will different users have different access rights?
-                </button>
-              </h2>
-              <div id="erpFaq4" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, Netlink ERP features role-based access control (RBAC). You can define precise permissions for view, create, edit, approve, or delete rights per department and employee.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq5">
-                  Can I access ERP reports on my mobile?
-                </button>
-              </h2>
-              <div id="erpFaq5" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Yes, our cloud dashboard is fully responsive, and web mobile access allows management to view real-time sales, inventory, and profit reports from anywhere on iOS or Android.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq6">
-                  What kind of support do you provide after implementation?
-                </button>
-              </h2>
-              <div id="erpFaq6" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  We offer dedicated phone, email, and remote support along with on-site assistance, annual maintenance contracts (AMC), and continuous system feature updates.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#erpFaq7">
-                  How long does ERP implementation take?
-                </button>
-              </h2>
-              <div id="erpFaq7" class="accordion-collapse collapse" data-bs-parent="#erpFaqAccordion">
-                <div class="accordion-body text-muted">
-                  Implementation timelines depend on scope. Standard setups typically take 2 to 4 weeks, while complex manufacturing multi-location rollouts take 6 to 12 weeks.
-                </div>
-              </div>
+    <!-- 9. FAQ & Consultation CTA Banner -->
+  <section class="faq-cta-section">
+    <div class="faq-cta-grid">
+      
+      <!-- Left FAQ Accordion -->
+      <div class="faq-block">
+        <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+        <div class="accordion-list">
+          
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can ERP be implemented in phases?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, Netlink ERP is modular. You can start with core modules like Sales, Purchase, and Accounts, and gradually add Inventory, HR, or Production modules as your business scales.</p>
             </div>
           </div>
-        </div>
 
-        <!-- Right Column: Consultation Banner Card -->
-        <div class="col-lg-5">
-          <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm d-flex flex-column justify-content-between">
-            <div>
-              <span class="section-badge">READY TO STREAMLINE YOUR OPERATIONS?</span>
-              <h3 class="fw-bold text-dark my-3">
-                Let's Build an ERP System That Fits Your Business Perfectly.
-              </h3>
-              <p class="text-muted mb-4">
-                Share your requirements and our experts will recommend the right solution for you.
-              </p>
-            </div>
-
-            <div>
-              <a href="#" class="btn-primary-green w-100 justify-content-center mb-3 py-3">
-                Schedule a Consultation <i class="bi bi-arrow-right"></i>
-              </a>
-              <div class="text-center">
-                <a href="tel:+919823323456" class="top-phone-link fw-bold text-dark">
-                  <i class="bi bi-telephone text-green"></i> Or Call Us: +91 98233 23456
-                </a>
-              </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can ERP integrate with Tally or other software?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, we provide seamless API and data sync connectors for Tally, WhatsApp, payment gateways, and third-party e-commerce platforms.</p>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can existing Excel data be imported into ERP?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, we provide bulk Excel/CSV import tools along with expert data migration assistance to transition all your items, customers, and opening balances without data loss.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Will different users have different access rights?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, Netlink ERP features role-based access control (RBAC). You can define precise permissions for view, create, edit, approve, or delete rights per department and employee.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Can I access ERP reports on my mobile?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, our cloud dashboard is fully responsive, and web mobile access allows management to view real-time sales, inventory, and profit reports from anywhere on iOS or Android.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>What kind of support do you provide after implementation?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We offer dedicated phone, email, and remote support along with on-site assistance, annual maintenance contracts (AMC), and continuous system feature updates.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How long does ERP implementation take?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Implementation timelines depend on scope. Standard setups typically take 2 to 4 weeks, while complex manufacturing multi-location rollouts take 6 to 12 weeks.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <!-- Right CTA Box -->
+      <div class="side-cta-card">
+        <span class="side-cta-tag">READY TO STREAMLINE YOUR OPERATIONS?</span>
+        <h3>Let's Build an ERP System That Fits Your Business Perfectly.</h3>
+        <p>Share your requirements and our experts will get in touch with the best solution.</p>
+        
+        <button class="btn-green full-width">Schedule a Consultation <i class="fa-solid fa-arrow-right"></i></button>
+        <div class="side-cta-phone"><i class="fa-solid fa-phone"></i> Or Call Us: <strong>+91 98233 23456</strong></div>
+
+        <div class="side-cta-img">
+          <img src="images/indian-leadership.jpg" alt="Team Discussion">
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -746,5 +715,26 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
   <script src="script.js"></script>
+  <!-- Accordion Script -->
+  <script>
+    const accHeaders = document.querySelectorAll('.accordion-header');
+    accHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+        
+        const icon = header.querySelector('.acc-icon');
+        if (icon) {
+          if (item.classList.contains('active')) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
